@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
     <link href="https://googleapis.com" rel="stylesheet">
     <title>Кинопоиск. Онлайн-кинотеатр</title>
 </head>
@@ -15,47 +15,115 @@
 
         <!--Header-->
         <header class="header">
+            <!-- Navbar kinopoisk menu -->
             <div class="nav-dropdown">
                 <button class="nav-dropdown-btn" type="button">
-                    <img src="img/nav.svg" alt="">
+                    <img src="img/icons/nav.svg" alt="">
                 </button>
+                <div class="header-logo">
+                    <a href="index.html"><img src="img/icons/kinopoisk.svg" alt=""></a>
+                </div>
+                <div class="nav-link-container">
+                    <ul class="nav-item-container">
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/home.svg" alt="">
+                            <span>Главная</span>
+                        </a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/play.svg" alt="">
+                            <span>Онлайн-кинотеатр</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/cart.svg" alt="">
+                            <span>Магазин</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/movie.svg" alt="">
+                            <span>Фильмы</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/serial.svg" alt="">
+                            <span>Сериалы</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/tv.svg" alt="">
+                            <span>Телеканалы</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/sport.svg" alt="">
+                            <span>Спорт</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/sub.svg" alt="">
+                            <span>Подписки</span>
+                        </a>
+                        </li> 
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/ticket.svg" alt="">
+                            <span>Блиеты в кино</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/media.svg" alt="">
+                            <span>Медиа</span>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
-
-            <div class="header-logo">
-                <a href="index.html"><img src="img/kinopoisk.svg" alt=""></a>
-            </div>
-
+            <!-- Kino and Ticket -->
             <div class="header-link-container">
                 <a href="#" class="header-link">
-                    <img src="img/play.png" alt="">
+                    <img src="img/icons/play.svg" alt="">
                     <span>Онлайн-кинотеатр</span>
                 </a>
             </div>
             <div class="header-link-container">
                 <a href="#" class="header-link">
-                    <img src="img/ticket.png" alt="">
+                    <img src="img/icons/ticket.svg" alt="">
                     <span>Билеты в кино</span>
                 </a>
             </div>
 
+            <!-- Search panel -->
             <div class="header-search-container">
                 <form action="index.html">
                     <input type="text" class="header-search" name="kp_query" aria-label="Фильмы, сериалы, персоны"
                         placeholder="Фильмы, сериалы, персоны">
                 </form>
-                <button class="header-tools-button" type="submit"><img src="img/search-tools.svg" alt=""></button>
-                <button class="header-search-button" type="submit"><img src="img/search.svg" alt=""></button>
+                <button class="header-tools-button" type="submit"><img src="img/icons/search-tools.svg" alt=""></button>
+                <button class="header-search-button" type="submit"><img src="img/icons/search.svg" alt=""></button>
             </div>
 
+            <!-- Bookmark button -->
             <div class="header-bookmark">
-                <a href="#"><img src="img/bookmark.svg" alt=""></a>
+                <a href="#"><img src="img/icons/bookmark.svg" alt=""></a>
             </div>
-
+            <!-- Watch movie btn -->
             <div class="free-movie-watch">
                 <button type="button">Смотреть кино бесплатно</button>
             </div>
-
+            <!-- Avatar menu -->
             <div class="avatar-dropdown">
                 <button class="avatar-dropdown-btn" type="button">
                     <img src="img/islands-200.webp" alt="">
@@ -86,7 +154,6 @@
                         <span>&#10162;</span>
                         Выйти
                     </a>
-
                 </div>
             </div>
         </header>
