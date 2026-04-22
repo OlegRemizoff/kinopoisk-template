@@ -44,14 +44,18 @@ h6 {
 ===============================================*/
 
 .header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-color: black;
     padding: 8px;
 
-}
 
+}
 
 /*==============================================
 1.1 Navbar 
@@ -76,18 +80,17 @@ h6 {
 }
 
 /* Hidden nav list */
-
 .nav-link-container {
     display: none;
     position: absolute;
     left: 175px;
     top: 50px;
     width: 280px;
-    
+
     background: black;
     border: 1px solid black;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; 
+    border-bottom-right-radius: 15px;
 }
 
 .nav-dropdown:hover .nav-link-container {
@@ -106,7 +109,7 @@ h6 {
     padding-top: 16px;
     padding-left: 20px;
     filter: brightness(200%);
-    
+
 
 }
 
@@ -119,25 +122,22 @@ h6 {
     color: #fff;
 }
 
-
-
 .nav-link {
     display: flex;
     align-items: center;
 
-    
+
 }
 
 .nav-link span {
     padding-left: 10px;
-    color: rgba(255,255,255,.6);
+    color: rgba(255, 255, 255, .6);
 }
 
 .nav-logo {
     width: 24px;
     filter: invert(65%);
     transition: filter 0.3s ease;
-    
 }
 
 /*==============================================
@@ -157,15 +157,12 @@ h6 {
     display: flex;
     align-items: center;
     margin-left: 25px;
-
-
 }
 
 .header-link {
     display: inline-flex;
     align-items: center;
     flex-shrink: 0;
-
     filter: invert(40%);
     /* opacity: 0.6; */
     /* transition: 0.3s; */
@@ -199,7 +196,6 @@ h6 {
 .header-search-container {
     display: flex;
     margin-left: 2px;
-
 }
 
 /*==============================================
@@ -219,7 +215,6 @@ h6 {
     border-bottom-left-radius: 8px;
     outline: none;
     background: #2e2d2d;
-
 }
 
 .header-search:focus {
@@ -330,7 +325,6 @@ h6 {
     right: 120px;
     margin-right: 40px;
     padding-bottom: 5px;
-
     background: black;
     border: 1px solid black;
     border-bottom-left-radius: 15px;
@@ -370,7 +364,6 @@ h6 {
     padding: 7px 16px;
     border-radius: 12px;
     margin: 0 10px;
-
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -378,7 +371,6 @@ h6 {
 .avatar-dropdown:hover .avatar-link-group {
     display: flex;
     flex-direction: column;
-
 }
 
 .avatar-link-group a:hover {
@@ -400,24 +392,133 @@ End Header
     display: flex;
     width: 1280px;
     margin: 0 auto;
-
     background-color: #fff;
-    border: 1px solid rgb(236, 231, 231);
-
-
 }
 
 
-
+/*==============================================
+Person image
+===============================================*/
 
 .left-side {
-    width: 200px;
-    background-color: red;
-    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 390px;
 }
 
-.content {
+.main-image-container {
+    width: 300px;
+    height: 450px;
+    margin-top: 120px;
+    flex: 0 0 320px;
+}
+
+.main-image {
     width: 100%;
-    background-color: greenyellow;
-    padding-bottom: 200px;
+}
+
+.add-to-folder-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+    margin-top: 25px;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background .2s ease, transform .2s ease;
+}
+
+.add-to-folder-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(0.95);
+}
+
+.add-to-folder-btn img {
+    display: block;
+    width: 24px;
+}
+
+.add-to-folder-btn span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.share-container {
+    width: 302px;
+    margin-top: 250px;
+}
+
+.share-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.share-item {
+    margin-left: 8px;
+    /* margin-inline-end: 8px; */
+}
+
+.share-item>a>img {
+    display: block;
+    width: 52px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+
+}
+
+.button-container button {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.button-container button::before {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    margin-left: 12px;
+
+    content: "";
+    border-radius: 50%;
+    background-color: var(--dot-color, gray);
+}
+
+.buttonError {
+    --dot-color: red;
+}
+
+
+.buttonInfo {
+    --dot-color: green;
+}
+
+/*==============================================
+Person info
+===============================================*/
+
+.content {
+    border-left: 1px solid red;
+    background-color: #f4f4f4;
 }
