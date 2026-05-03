@@ -647,13 +647,6 @@ Person info
 }
 
 
-.popular-now {
-    margin-top: 45px;
-    margin-left: 7px;
-}
-
-
-
 .right-side {
     /* border-left: 1px solid red; */
 }
@@ -688,4 +681,102 @@ Person info
     color: #000;
     line-height: 20px;
     letter-spacing: -.5px;
+}
+
+
+
+.popular-now-wrapper {
+    position: relative;
+    overflow: visible;
+}
+
+
+.popular-now {
+    width: 570px;
+    overflow: hidden;
+    margin-top: 45px;
+    margin-left: 7px;
+    
+    
+}
+
+.slider-container {
+    margin-top: 20px;
+    /* position: relative; */
+}
+
+.slider-track {
+    display: flex;
+}
+
+.card {
+    width: 150px;
+    min-width: 150px;
+    margin-right: 4px;
+}
+
+.card img {
+    display: block;
+    width: 100%;          
+    aspect-ratio: 2 / 3;  /* высота в 1.5 больше ширины*/
+    object-fit: cover;    /* Обрезает лишнее, не растягивая картинку */
+    
+}
+
+.card-title {
+    display: block;
+    margin-top: 7px;
+    font-size: 14px;
+    letter-spacing: -.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000;
+    font-weight:600;
+}
+
+.card-detail {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 12px;
+    letter-spacing: -.5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.btn.prev {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top: 130px;
+    left: -15px;
+    padding: 14px 17px;
+    border-radius: 100%;
+    border: 1px solid #b9b9b9;
+
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.btn.prev:hover {
+    transform: translateX(-5px);
+}
+
+.btn.next {
+    position: absolute;
+    z-index: 100;
+    top: 130px;
+    right: -15px;
+    padding: 14px 17px;
+    border-radius: 100%;
+
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn.next:hover {
+    transform: translateX(5px);
 }
