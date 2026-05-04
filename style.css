@@ -44,7 +44,7 @@ h6 {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    
+
     padding: 12px;
     border-radius: 50px;
     border: none;
@@ -549,10 +549,10 @@ Person info
 
 .first-name {
     display: block;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     font-weight: 700px;
-    letter-spacing: -3px; 
+    letter-spacing: -3px;
 
     white-space: nowrap;
     overflow: hidden;
@@ -561,14 +561,14 @@ Person info
 
 .second-name {
     display: block;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     font-weight: 400px;
-    letter-spacing: -.5px; 
+    letter-spacing: -.5px;
     color: rgba(0, 0, 0, .6);
 
     margin-top: 10px;
-    
+
 }
 
 .favorite-button {
@@ -586,7 +586,7 @@ Person info
 }
 
 
-.favorite-button img{
+.favorite-button img {
     width: 24px;
 }
 
@@ -616,12 +616,12 @@ Person info
     width: 580px;
     margin-top: 20px;
     /* margin-left: 7px; */
-    
+
 }
 
 .data-list {
     display: flex;
-    
+
 }
 
 .data-title {
@@ -633,7 +633,7 @@ Person info
     /* line-height: 19px; */
     color: #757575;
 
-    
+
 }
 
 .data-value {
@@ -642,7 +642,7 @@ Person info
     height: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 19px;
-    
+
 
 }
 
@@ -675,7 +675,7 @@ Person info
     margin-top: 4px;
 }
 
-.movie-link a{
+.movie-link a {
     font-size: 13px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000;
@@ -696,8 +696,8 @@ Person info
     overflow: hidden;
     margin-top: 45px;
     margin-left: 7px;
-    
-    
+
+
 }
 
 .slider-container {
@@ -710,6 +710,7 @@ Person info
 }
 
 .card {
+    position: relative;
     width: 150px;
     min-width: 150px;
     margin-right: 4px;
@@ -717,10 +718,12 @@ Person info
 
 .card img {
     display: block;
-    width: 100%;          
-    aspect-ratio: 2 / 3;  /* высота в 1.5 больше ширины*/
-    object-fit: cover;    /* Обрезает лишнее, не растягивая картинку */
-    
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    /* высота в 1.5 больше ширины*/
+    object-fit: cover;
+    /* Обрезает лишнее, не растягивая картинку */
+
 }
 
 .card-title {
@@ -730,7 +733,7 @@ Person info
     letter-spacing: -.5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000;
-    font-weight:600;
+    font-weight: 600;
 }
 
 .card-detail {
@@ -746,7 +749,7 @@ Person info
 .btn.prev {
     display: block;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     top: 130px;
     left: -15px;
     padding: 14px 17px;
@@ -765,7 +768,7 @@ Person info
 
 .btn.next {
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     top: 130px;
     right: -15px;
     padding: 14px 17px;
@@ -779,4 +782,35 @@ Person info
 
 .btn.next:hover {
     transform: translateX(5px);
+}
+
+.rating-poster {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    min-width: 32px;
+    padding-inline-start: 5px;
+    padding-inline-end: 0;
+    padding-inline-end: 5px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -.5px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+
+}
+
+.rating-poster.low {
+    background-color: red;
+}
+
+.rating-poster.middle {
+    background-color: #777;
+    ;
+}
+
+.rating-poster.large {
+    background-color: #3bb33b;
 }
