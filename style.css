@@ -33,6 +33,14 @@ h6 {
     margin: 0;
 }
 
+:root {
+  --font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
 .page {
     width: 100%;
     margin: 0 auto;
@@ -52,6 +60,15 @@ h6 {
     background-color: #f4f4f4;
     transition: background .2s ease, transform .2s ease;
 }
+
+
+.banner-wrapper {
+    padding-top: 10px;
+    background-color: red;
+
+}
+
+
 
 
 /*==============================================
@@ -404,15 +421,25 @@ End Header
 ===============================================*/
 
 .main-container {
-    display: flex;
     width: 1280px;
     margin: 0 auto;
     background-color: #fff;
 }
 
 
+
 /*==============================================
-Person image
+2. Main-info
+===============================================*/
+.main-info {
+    display: flex;
+    border-bottom: 1px solid rgba(31,31,31,0.1);
+
+}
+
+
+/*==============================================
+2.1 Person image
 ===============================================*/
 
 .left-side {
@@ -530,10 +557,10 @@ Person image
 }
 
 /*==============================================
-Person info
+2.2 Person info
 ===============================================*/
 
-.content {
+.center {
     /* border-left: 1px solid red; */
     /* background-color: #f4f4f4; */
 }
@@ -700,6 +727,9 @@ Person info
 
 }
 
+
+/* Slider */
+
 .slider-container {
     margin-top: 20px;
     /* position: relative; */
@@ -813,4 +843,50 @@ Person info
 
 .rating-poster.large {
     background-color: #3bb33b;
+}
+
+/* End slider */
+
+
+
+/*==============================================
+3. Additional-info
+===============================================*/
+
+.additional-info {
+    display: flex;
+}
+
+
+.additional-content {
+    width: 800px;
+    height: 700px;
+    margin-left: 45px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+
+
+}
+
+
+.navigation-tabs {
+    margin-top: 10px;
+    border-bottom: 1px solid rgba(31,31,31,0.1);
+
+}
+
+.navigation-tabs ul {
+    display: flex;
+}
+
+.navigation-tabs a {
+    display: inline-block;
+    padding-block-end: 15px;
+    margin-right: 16px;
+
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    font-family: var(--font-family);
+    letter-spacing: -.5px;
 }
