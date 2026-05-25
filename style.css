@@ -526,6 +526,7 @@ End Header
 ===============================================*/
 .main-info {
     display: flex;
+    padding-bottom: 40px;
     border-bottom: 1px solid rgba(31, 31, 31, 0.1);
 
 }
@@ -728,7 +729,7 @@ End Header
 .title {
     font-size: 21px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: -.4px;
+    letter-spacing: -1px;
 
 }
 
@@ -864,10 +865,10 @@ End Header
 
 .additional-content {
     width: 800px;
-    height: 700px;
+    height: 1000px;
     margin-left: 45px;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    /* border-left: 1px solid red; */
+    /* border-right: 1px solid red; */
 
 
 }
@@ -902,3 +903,64 @@ End Header
     margin-top: 60px;
 
 }
+
+.you-know {
+    margin-top: 68px;
+}
+
+.you-know-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.you-know-title .button {
+    
+    font-weight: 700;
+    padding: 8px 18px 8px 18px;
+}
+
+.you-know-title .button::before {
+    content: "+";
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 16px;
+    
+}
+
+.list-facts {
+    margin-top: 12px;
+}
+
+.fact {
+    display: block;
+    position: relative;
+    padding: 16px 0 16px 24px;
+    border-bottom: 1px solid rgba(31, 31, 31, .4);
+
+}
+
+.fact::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(31, 31, 31, .4);
+
+    top: 21px;
+    left: 0;
+}
+
+.fact.last {
+    border-bottom: none;
+}
+
+.show-more {
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 18px 8px 18px;
+}
+
