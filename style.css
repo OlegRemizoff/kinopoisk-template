@@ -521,6 +521,7 @@ End Header
 
 
 
+
 /*==============================================
 2. Main-info
 ===============================================*/
@@ -588,19 +589,19 @@ End Header
     margin-top: 250px;
 }
 
-.share-list {
+.social-list {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0;
 }
 
-.share-item {
+.social-item {
     margin-left: 8px;
     /* margin-inline-end: 8px; */
 }
 
-.share-item>a>img {
+.social-item>a>img {
     display: block;
     width: 52px;
 }
