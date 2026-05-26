@@ -61,6 +61,10 @@ h6 {
     transition: background .2s ease, transform .2s ease;
 }
 
+.button:hover {
+    transform: scale(1.05);
+    filter: brightness(0.95);
+}
 
 .banner-wrapper {
     padding-top: 10px;
@@ -555,31 +559,17 @@ End Header
     width: 100%;
 }
 
-.add-to-folder-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+.add-to-folder {
     width: 300px;
     margin-top: 25px;
-    padding: 12px;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    transition: background .2s ease, transform .2s ease;
 }
 
-.add-to-folder-btn:hover {
-    transform: scale(1.05);
-    filter: brightness(0.95);
-}
-
-.add-to-folder-btn img {
+.add-to-folder img {
     display: block;
     width: 24px;
 }
 
-.add-to-folder-btn span {
+.add-to-folder span {
     font-size: 15px;
     font-weight: 600;
 }
@@ -700,11 +690,6 @@ End Header
     padding-top: 15px;
     padding-bottom: 15px;
 
-}
-
-.favorite-button:hover {
-    transform: scale(1.05);
-    filter: brightness(0.95);
 }
 
 
@@ -950,7 +935,6 @@ End Header
     height: 8px;
     border-radius: 50%;
     background-color: rgba(31, 31, 31, .4);
-
     top: 21px;
     left: 0;
 }
@@ -963,5 +947,5 @@ End Header
     font-weight: 700;
     font-size: 15px;
     padding: 8px 18px 8px 18px;
+    
 }
-
