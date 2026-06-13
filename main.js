@@ -1,6 +1,50 @@
 console.log("ok");
 
 
+
+// Filter 
+
+// Находим все фильтры на странице
+const filters = document.querySelectorAll('.filter');
+
+filters.forEach(filter => {
+    const toggleBtn = filter.querySelector('.filter-toggle');
+
+    // Клик по кнопке внутри конкретного фильтра
+    toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); // Предотвращаем срабатывание клика по document
+        
+        // Опционально: закрываем другие открытые фильтры перед открытием текущего
+        filters.forEach(otherFilter => {
+            if (otherFilter !== filter) {
+                otherFilter.classList.remove('active');
+            }
+        });
+
+        filter.classList.toggle('active');
+    });
+});
+
+// Закрытие ВСЕХ фильтров при клике вне их области
+document.addEventListener('click', () => {
+    filters.forEach(filter => {
+        filter.classList.remove('active');
+    });
+});
+
+// Запрещаем закрытие фильтра при клике внутри его контента
+filters.forEach(filter => {
+    filter.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+});
+
+
+
+
+
+//Slider
+
 // Находим все контейнеры слайдеров на странице
 document.querySelectorAll('.slider-wrapper').forEach(slider => {
     // Ищем элементы СТРОГО внутри текущего слайдера
@@ -54,4 +98,17 @@ document.querySelectorAll('.slider-wrapper').forEach(slider => {
         }
     });
 });
+
+const btn = document.getElementById('btn');
+const menu = document.getElementById('menu');
+
+
+btn.addEventListener('click', () => {
+  if (menu.style.display === 'none') {
+    menu.style.display = 'block';
+  } else {
+    menu.style.display = 'none';
+  }
+});
+
 
