@@ -1008,6 +1008,7 @@ You-Know
 
 .filter-link {
     display: flex;
+    white-space: nowrap;
     align-items: baseline;
     justify-content: space-between;
     padding: 10px 20px;
@@ -1026,5 +1027,6 @@ You-Know
 .check::after {
     content: "✔";
     font-size: 25px;
+    padding-left: 10px;
     color: orangered;
 }
