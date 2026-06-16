@@ -47,6 +47,20 @@ h6 {
     background-color: #f4f4f4;
 }
 
+
+.low {
+    background-color: red;
+}
+
+.middle {
+    background-color: #777;
+    ;
+}
+
+.large {
+    background-color: #3bb33b;
+}
+
 .button {
     display: inline-flex;
     justify-content: center;
@@ -71,8 +85,6 @@ h6 {
     background-color: red;
 
 }
-
-
 
 /* Slider */
 .slider-wrapper {
@@ -122,7 +134,7 @@ h6 {
     font-size: 12px;
     letter-spacing: -.5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(0, 0, 0, .6);
 }
 
@@ -522,6 +534,7 @@ End Header
     width: 1280px;
     margin: 0 auto;
     background-color: #fff;
+    
 }
 
 
@@ -664,7 +677,7 @@ End Header
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
-    font-weight: 700px;
+    font-weight: 700;
     letter-spacing: -3px;
 
     white-space: nowrap;
@@ -676,7 +689,7 @@ End Header
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     letter-spacing: -.5px;
     color: rgba(0, 0, 0, .6);
 
@@ -818,7 +831,7 @@ End Header
 
 }
 
-.rating-poster.low {
+/* .rating-poster.low {
     background-color: red;
 }
 
@@ -829,7 +842,7 @@ End Header
 
 .rating-poster.large {
     background-color: #3bb33b;
-}
+} */
 
 /* End slider */
 
@@ -962,6 +975,7 @@ You-Know
 .filters-container {
     display: flex;
     margin-top: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -1004,6 +1018,7 @@ You-Know
 
     border-radius: 5%;
     margin-top: 30px;
+    background-color: white;
 }
 
 .filter-link {
@@ -1029,4 +1044,103 @@ You-Know
     font-size: 25px;
     padding-left: 10px;
     color: orangered;
+}
+
+
+.film-wrapper {
+    display: flex;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #eceaea;
+    border-radius: 5px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.film-wrapper:hover {
+    background-color: #f7f5f5;
+
+
+}
+
+.film-information {
+    width: 420px;
+    padding: 0 32px 0 5px;
+}
+
+.film-first-title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+
+}
+
+.film-second-title {
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.74);
+    padding-top: 5px;
+}
+
+.role {
+    display: block;
+    padding-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.534);
+}
+
+.film-rating {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-low {
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+}
+
+.rating-middle {
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #777;
+    ;
+}
+
+.rating-large {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3bb33b;
+}
+
+.grade {
+    margin-top: 3px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.user-action-buttons {
+    margin-left: 65px;
+}
+
+.to-watch-btn {
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+.to-ellipsis-btn {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
