@@ -212,7 +212,7 @@ h6 {
 
 .nav-dropdown-btn {
     border: none;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -523,6 +523,23 @@ h6 {
 .avatar-link-group a span {
     font-size: 20px;
     color: red;
+}
+
+
+/* Media */
+
+@media (max-width: 1200px) {
+    .nav-dropdown {
+        margin-left: 27px;
+    }
+    .nav-link-container  {
+        left: 0;
+    }
+    .avatar-link-group {
+        right: -40px;
+    }
+    
+
 }
 
 
