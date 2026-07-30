@@ -532,13 +532,15 @@ h6 {
     .nav-dropdown {
         margin-left: 27px;
     }
-    .nav-link-container  {
+
+    .nav-link-container {
         left: 0;
     }
+
     .avatar-link-group {
         right: -40px;
     }
-    
+
 
 }
 
@@ -551,7 +553,7 @@ End Header
     width: 1280px;
     margin: 0 auto;
     background-color: #fff;
-    
+
 }
 
 
@@ -677,8 +679,8 @@ End Header
 ===============================================*/
 
 .center {
-    /* border-left: 1px solid red; */
-    /* background-color: #f4f4f4; */
+    /* border-left: 1px solid red;
+    background-color: #f4f4f4; */
 }
 
 
@@ -697,9 +699,9 @@ End Header
     font-weight: 700;
     letter-spacing: -3px;
 
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
 }
 
 .second-name {
@@ -714,13 +716,59 @@ End Header
 
 }
 
-.favorite-button {
-    width: 215px;
-    margin-top: 25px;
-    margin-left: 7px;
+.movie-slogan {
+    font-size: 17px;
+    font-family: var(--font-family);
+    letter-spacing: -.5px;
+}
+
+
+.user-action-buttons {
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.to-watch-btn {
+    width: 200px;
+
     padding-top: 15px;
     padding-bottom: 15px;
+}
 
+.to-watch-btn>img {
+    width: 20px;
+}
+
+.to-watch-btn>span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.to-ellipsis-btn {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+
+    border: 1px solid #f4f4f4;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+
+    transition: background .2s ease, transform .2s ease;
+}
+
+.to-ellipsis-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(0.95);
+}
+
+
+.to-ellipsis-btn>img {
+    width: 32px;
+    margin: 5px;
 }
 
 
@@ -1142,22 +1190,4 @@ You-Know
     margin-top: 3px;
     font-size: 15px;
     color: rgba(0, 0, 0, .6);
-}
-
-.user-action-buttons {
-    margin-left: 65px;
-}
-
-.to-watch-btn {
-    font-size: 13px;
-    font-weight: 600;
-
-}
-
-.to-ellipsis-btn {
-    all: unset;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
