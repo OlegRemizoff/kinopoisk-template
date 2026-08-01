@@ -838,6 +838,68 @@ End Header
 }
 
 
+.movie-stats {
+    /* border: 1px solid red; */
+    margin-top: 128px;
+    margin-left: 40px;
+}
+
+.movie-stats__rating {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: var(--font-family);
+    letter-spacing: -3px;
+    color: #3bb33b;
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.movie-stats__count {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-family: var(--font-family);
+
+}
+
+.movie-stats__reviews {
+    margin: 0;
+    font-size: 13px;
+    font-family: var(--font-family);
+}
+
+.movie-stats__title {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button.movie-stats__block {
+    padding: 7px;
+
+}
+
+.movie-stats__list {
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+.movie-stats__list a {
+    color: #929191;
+}
+
+.movie-stats__list a:hover {
+    color: red;
+}
+
+.movie-stats__number {
+    font-family: var(--font-family);
+    font-weight: 600;
+
+    margin-right: 5px;
+}
 
 .side-movie-container {
     width: 180px;
