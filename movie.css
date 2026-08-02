@@ -834,7 +834,7 @@ End Header
 
 
 .right-side {
-    /* border-left: 1px solid red; */
+    /* border-left: 1px solid red;z */
 }
 
 
@@ -903,7 +903,7 @@ End Header
 
 .side-movie-container {
     width: 180px;
-    margin-top: 360px;
+    margin-top: 145px;
     margin-left: 40px;
 }
 
@@ -920,16 +920,27 @@ End Header
 }
 
 .movie-link {
-    margin-top: 4px;
+    margin-top: 3px;
 }
 
 .movie-link a {
     font-size: 13px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-family);
     color: #000;
     line-height: 20px;
     letter-spacing: -.5px;
 }
+
+.movie-link a:hover {
+    color: #f50;
+}
+
+.actor-count {
+    font-size: 13px;
+    font-family: var(--font-family);
+    color: #f50;
+}
+
 
 .popular-now {
     width: 570px;
