@@ -711,7 +711,7 @@ End Header
 .name-container {
     display: block;
     width: 580px;
-    margin-top: 120px;
+    margin-top: 115px;
     margin-left: 7px;
 }
 
@@ -719,7 +719,7 @@ End Header
 .first-name {
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 700;
     letter-spacing: -3px;
 
@@ -831,12 +831,13 @@ End Header
 
 .data-list {
     display: flex;
+    align-items: center;
 
 }
 
 .data-title {
     width: 160px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     font-size: 13px;
     height: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -864,7 +865,7 @@ End Header
 
 .movie-stats {
     /* border: 1px solid red; */
-    margin-top: 128px;
+    margin-top: 120px;
     margin-left: 40px;
 }
 
@@ -927,7 +928,7 @@ End Header
 
 .side-movie-container {
     width: 180px;
-    margin-top: 145px;
+    margin-top: 150px;
     margin-left: 40px;
 }
 
