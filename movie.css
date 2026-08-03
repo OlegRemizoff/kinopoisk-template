@@ -967,6 +967,32 @@ End Header
 }
 
 
+.award {
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 25px;
+
+}
+
+.award__num {
+    position: absolute;
+    bottom: 5px;
+    right: 70px;
+    width: 30px;
+    height: 30px;
+    padding: 5px 10px;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: #f50;
+    color: #fff;
+
+    font-size: 14px;
+    font-family: var(--font-family);
+    font-weight: bold;
+
+}
+
 .popular-now {
     width: 570px;
     overflow: hidden;
