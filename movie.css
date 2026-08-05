@@ -142,7 +142,7 @@ h6 {
     display: block;
     position: absolute;
     z-index: 1;
-    top: 130px;
+    top: 170px;
     left: -15px;
     padding: 14px 17px;
     border-radius: 100%;
@@ -161,7 +161,7 @@ h6 {
 .btn.next {
     position: absolute;
     z-index: 1;
-    top: 130px;
+    top: 170px;
     right: -15px;
     padding: 14px 17px;
     border-radius: 100%;
@@ -564,8 +564,8 @@ End Header
 ===============================================*/
 .main-info {
     display: flex;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(31, 31, 31, 0.1);
+    /* padding-bottom: 40px; */
+    /* border-bottom: 1px solid rgba(31, 31, 31, 0.1); */
 
 }
 
@@ -631,72 +631,8 @@ End Header
     font-weight: 600;
 }
 
-.share-container {
-    width: 302px;
-    margin-top: 250px;
-}
-
-.social-list {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.social-item {
-    margin-left: 8px;
-    /* margin-inline-end: 8px; */
-}
-
-.social-item>a>img {
-    display: block;
-    width: 52px;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    margin-top: 25px;
-    margin-bottom: 35px;
 
 
-}
-
-.button-container button {
-    display: inline-block;
-    width: auto;
-    padding: 0;
-    margin: 0;
-    border: none;
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 13px;
-    background: rgba(0, 0, 0, 0);
-}
-
-.button-container button::before {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin-right: 8px;
-    margin-left: 12px;
-
-    content: "";
-    border-radius: 50%;
-    background-color: var(--dot-color, gray);
-}
-
-.buttonError {
-    --dot-color: red;
-}
-
-
-.buttonInfo {
-    --dot-color: green;
-}
 
 /*==============================================
 2.2 Person info
@@ -991,6 +927,89 @@ End Header
     font-family: var(--font-family);
     font-weight: bold;
 
+}
+
+
+
+/* Share-and-slide */
+
+.share-and-slide {
+    display: flex;
+    align-items:last baseline;
+
+    /* delimitr-line */
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.1);
+    
+
+}
+
+.share-container {
+    width: 302px;
+    margin-left: 30px;
+    margin-right: 60px;
+    
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.social-item {
+    margin-left: 8px;
+    /* margin-inline-end: 8px; */
+}
+
+.social-item>a>img {
+    display: block;
+    width: 52px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+
+
+}
+
+.button-container button {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.button-container button::before {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    margin-left: 12px;
+
+    content: "";
+    border-radius: 50%;
+    background-color: var(--dot-color, gray);
+}
+
+.buttonError {
+    --dot-color: red;
+}
+
+.buttonInfo {
+    --dot-color: green;
 }
 
 .popular-now {
