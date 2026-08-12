@@ -1107,6 +1107,13 @@ End Header
 }
 
 
+.movie-description {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+
+
 /*==============================================
 You-Know 
 ===============================================*/
@@ -1333,4 +1340,8 @@ You-Know
     margin-top: 3px;
     font-size: 15px;
     color: rgba(0, 0, 0, .6);
+}
+
+.user-rating-container {
+    
 }
