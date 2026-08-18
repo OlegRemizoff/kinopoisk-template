@@ -935,12 +935,12 @@ End Header
 
 .share-and-slide {
     display: flex;
-    align-items:last baseline;
+    align-items: last baseline;
 
     /* delimitr-line */
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(31, 31, 31, 0.1);
-    
+
 
 }
 
@@ -948,7 +948,7 @@ End Header
     width: 302px;
     margin-left: 30px;
     margin-right: 60px;
-    
+
 }
 
 .social-list {
@@ -1098,7 +1098,6 @@ End Header
     letter-spacing: -.5px;
 }
 
-
 .movie-online {
     position: relative;
     overflow: hidden;
@@ -1106,11 +1105,72 @@ End Header
 
 }
 
-
 .movie-description {
     margin-top: 40px;
     font-size: 18px;
 }
+
+
+/* User Rating stars */
+.user-rating-container {}
+
+.user-rating__title {
+    margin-top: 40px;
+}
+
+.rating-group {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    margin-top: 10px;
+}
+
+/* Скрываем стандартные радиокнопки */
+.rating-group input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+/* Стили для лейбла со звездой */
+.rating-group label {
+    cursor: pointer;
+    padding: 0 1.5px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Цвет звезд по умолчанию (серый) */
+.rating-group svg {
+    width: 36px;
+    height: 36px;
+    fill: #ddd;
+    transition: fill 0.2s ease;
+}
+
+.rating-group span {
+    padding-top: 3px;
+    font-size: 12px;
+    font-family: var(--font-family);
+
+}
+
+/* Окрашивание звезд при наведении */
+.rating-group label:hover svg,
+.rating-group label:hover~label svg {
+    fill: black;
+    /* Светло-желтый при наведении */
+}
+
+/* Фиксация цвета выбранной звезды и всех предыдущих */
+.rating-group input:checked~label svg {
+    fill: #f50;
+}
+
 
 
 
@@ -1340,8 +1400,4 @@ You-Know
     margin-top: 3px;
     font-size: 15px;
     color: rgba(0, 0, 0, .6);
-}
-
-.user-rating-container {
-    
 }
