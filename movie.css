@@ -1112,7 +1112,12 @@ End Header
 
 
 /* User Rating stars */
-.user-rating-container {}
+.user-rating-container {
+    display: flex;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.199);
+    padding-bottom: 60px;
+
+}
 
 .user-rating__title {
     margin-top: 40px;
@@ -1171,8 +1176,25 @@ End Header
     fill: #f50;
 }
 
+.user-rating__other {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
 
+.user-rating__number {
+    font-size: 52px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    letter-spacing: -8px;
+    color: #3bb33b;
+}
 
+.user-rating__stats {
+    font-size: 14px;
+    color: #757575;
+}
 
 /*==============================================
 You-Know 
