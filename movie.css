@@ -1250,8 +1250,7 @@ End Header
 }
 
 .rating-fill span {
-    color: #ffffff;
-    /* Белый текст на зеленом */
+    color: #093;
     font-size: 12px;
     font-weight: bold;
 }
