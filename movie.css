@@ -1286,12 +1286,6 @@ End Header
 }
 
 
-
-
-
-
-
-
 /*==============================================
 You-Know 
 ===============================================*/
@@ -1401,3 +1395,101 @@ You-Know
     font-size: 15px;
     color: rgba(0, 0, 0, .6);
 }
+
+/*==============================================
+Reviews
+===============================================*/
+
+.reviews-container {
+    margin-top: 55px;
+}
+
+.button-review {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.button-review::before {
+    content: "+";
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 16px;
+
+}
+
+.reviews {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid red;
+
+}
+
+.review-left {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(47, 212, 78, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.199);
+}
+
+.review-header-bio {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.review-header-bio>img {
+    width: 48px;
+    border: 0.1px;
+    border-radius: 50%;
+}
+
+.review-header-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.review-header-text>a {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+.review-header-text>span {
+    font-size: 14px;
+    color: #757575;
+}
+
+.review-header-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-header-date>span {
+    font-size: 14px;
+    color: #757575;
+}
+
+.review-header-date>a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #757575;
+    text-align: end;
+}
+
+.review-right {
+    background-color: rgb(136, 255, 0);
+    padding-bottom: 600px;
+}
+
+
+
