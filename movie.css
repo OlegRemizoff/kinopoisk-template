@@ -1486,10 +1486,38 @@ Reviews
     text-align: end;
 }
 
+
+.review-box {
+    padding: 16px 28px;
+}
+
+.review-content {
+    max-height: 17em;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Когда добавлен этот класс, текст раскрывается */
+.review-content.is-open {
+    max-height: 40em;
+}
+
+.review-btn {
+    margin-top: 15px;
+    padding: 1px 6px 2px;
+    font-size: 13px;
+    cursor: pointer;
+    color: rgba(31, 31, 31, .7);
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(31, 31, 31, .1);
+}
+
+
+
 .review-right {
     background-color: rgb(136, 255, 0);
     padding-bottom: 600px;
 }
-
 
 

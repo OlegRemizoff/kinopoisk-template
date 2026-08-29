@@ -112,3 +112,6 @@ btn.addEventListener('click', () => {
 });
 
 
+// Рецензия
+
+
