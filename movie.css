@@ -552,13 +552,10 @@ End Header
 .main-container {
     width: 1280px;
     margin: 0 auto;
-    padding-bottom: 500px;
+    padding-bottom: 1000px;
     background-color: #fff;
 
 }
-
-
-
 
 /*==============================================
 2. Main-info
@@ -1400,7 +1397,7 @@ You-Know
 Reviews
 ===============================================*/
 
-.reviews-container {
+.reviews-wrapper {
     margin-top: 55px;
 }
 
@@ -1418,17 +1415,24 @@ Reviews
 
 }
 
-.reviews {
+.reviews-container {
     display: flex;
     margin-top: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
 }
 
-.review-left {
+.review-left-side {
     width: 620px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+.review {
+    border: 1px solid rgba(31, 31, 31, 0.199);;
+    margin-bottom: 20px;
     background-color: rgba(47, 212, 78, 0.1);
 }
 
@@ -1513,11 +1517,45 @@ Reviews
     background-color: rgba(31, 31, 31, .1);
 }
 
+.review-buttons-container {
+    padding: 16px 28px;
+}
+
+.add-comment {
+    font-size: 15px;
+    color: gray;
+}
+
+.add-comment::before {
+    content: url(./img/icons/comment.svg);
+    vertical-align: middle;
+    margin-right: 5px; 
+}
 
 
-.review-right {
+.review-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.review-button {
+    width: fit-content;
+    padding: 10px 14px;
+    margin-left: 5px;
+    background-color: #fff;
+
+}
+
+.review-button span {
+    font-weight: bold;
+
+}
+
+.review-right-side {
     background-color: rgb(136, 255, 0);
-    padding-bottom: 600px;
+    /* padding-bottom: 600px; */
 }
 
 
