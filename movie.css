@@ -16,6 +16,7 @@ body {
         text-decoration: none;
     }
 
+    background: #f4f4f4;
 }
 
 *,
@@ -44,7 +45,8 @@ h6 {
 .page {
     width: 100%;
     margin: 0 auto;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+
 }
 
 
@@ -552,7 +554,6 @@ End Header
 .main-container {
     width: 1280px;
     margin: 0 auto;
-    padding-bottom: 1000px;
     background-color: #fff;
 
 }
@@ -1554,8 +1555,46 @@ Reviews
 }
 
 .review-right-side {
-    background-color: rgb(136, 255, 0);
+    margin-left: 30px;
+    /* background-color: rgb(136, 255, 0); */
     /* padding-bottom: 600px; */
 }
 
 
+.review-counter-box {
+
+}
+
+.counter-total {
+    position: relative;
+}
+
+.counter-total::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%); /* Идеальное выравнивание по центру */
+    width: 2px;
+    height: 40px;
+    background-color: #ff0000;
+    border-radius: 2px;
+
+}
+
+
+.counter-digit {
+    font-size: 28px;
+    font-family: var(--font-family);
+    
+}
+
+.counter-percent {
+    color: #757575;
+}
+
+.review-rating {
+    margin-top: -3px;
+    font-size: 14px;
+    color: #363636;
+}
