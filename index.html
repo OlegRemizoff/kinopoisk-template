@@ -836,15 +836,22 @@
 
     <script src="main.js"></script>
     <script>
-        const toggleBtn = document.getElementById('reviewToggle');
-        const content = document.getElementById('reviewContent');
+        // Находим все кнопки переключения на странице
+        const toggleButtons = document.querySelectorAll('.review-btn');
 
-        toggleBtn.addEventListener('click', () => {
-        // Переключаем класс (если его нет — добавит, если есть — удалит)
-        const isOpen = content.classList.toggle('is-open');
-        
-        // Меняем текст на кнопке в зависимости от состояния блока
-        toggleBtn.textContent = isOpen ? 'Скрыть' : 'Показать всё';
+        toggleButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Находим контент именно того отзыва, внутри которого лежит кнопка
+                // (или который находится рядом с ней)
+                const card = btn.closest('.review');
+                const content = card.querySelector('.review-content');
+
+                // Переключаем класс видимости
+                const isOpen = content.classList.toggle('is-open');
+                
+                // Меняем текст конкретной кнопки
+                btn.textContent = isOpen ? 'Скрыть' : 'Показать всё';
+            });
         });
     </script>
     
