@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="person.css">
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <title>Кинопоиск. Онлайн-кинотеатр</title>
+</head>
+
+<body>
+    <div class="page">
+
+        <!--Header-->
+        <header class="header">
+            <!-- Navbar kinopoisk menu -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-btn" type="button">
+                    <img src="img/icons/nav.svg" alt="">
+                </button>
+                <div class="header-logo">
+                    <a href="index.html"><img src="img/icons/kinopoisk.svg" alt=""></a>
+                </div>
+                <nav class="nav-link-container">
+                    <ul class="nav-item-container">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/home.svg" alt="">
+                                <span>Главная</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/play.svg" alt="">
+                                <span>Онлайн-кинотеатр</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/cart.svg" alt="">
+                                <span>Магазин</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/movie.svg" alt="">
+                                <span>Фильмы</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/serial.svg" alt="">
+                                <span>Сериалы</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/tv.svg" alt="">
+                                <span>Телеканалы</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/sport.svg" alt="">
+                                <span>Спорт</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/sub.svg" alt="">
+                                <span>Подписки</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/ticket.svg" alt="">
+                                <span>Блиеты в кино</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="nav-logo" src="img/icons/media.svg" alt="">
+                                <span>Медиа</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!-- Kino and Ticket -->
+            <div class="header-link-container">
+                <a href="#" class="header-link">
+                    <img src="img/icons/play.svg" alt="">
+                    <span>Онлайн-кинотеатр</span>
+                </a>
+            </div>
+            <div class="header-link-container">
+                <a href="#" class="header-link">
+                    <img src="img/icons/ticket.svg" alt="">
+                    <span>Билеты в кино</span>
+                </a>
+            </div>
+
+            <!-- Search panel -->
+            <div class="header-search-container">
+                <form action="index.html">
+                    <input type="text" class="header-search" name="kp_query" aria-label="Фильмы, сериалы, персоны"
+                        placeholder="Фильмы, сериалы, персоны">
+                </form>
+                <button class="header-tools-button" type="submit"><img src="img/icons/search-tools.svg" alt=""></button>
+                <button class="header-search-button" type="submit"><img src="img/icons/search.svg" alt=""></button>
+            </div>
+
+            <!-- Bookmark button -->
+            <div class="header-bookmark">
+                <a href="#"><img src="img/icons/bookmark.svg" alt=""></a>
+            </div>
+            <!-- Watch movie btn -->
+            <div class="free-movie-watch">
+                <button type="button">Смотреть кино бесплатно</button>
+            </div>
+            <!-- Avatar menu -->
+            <div class="avatar-dropdown">
+                <button class="avatar-dropdown-btn" type="button">
+                    <img src="img/islands-200.webp" alt="">
+                </button>
+                <nav class="avatar-link-group">
+                    <img src="img/islands-200.webp" alt="">
+                    <h3>Олег Ремизов</h3>
+                    <span>+7 952 ***‒**‒22 • remi3off</span>
+                    <div class="separator"></div>
+                    <a href="#">Мой профиль</a>
+                    <a href="#">Оценки</a>
+                    <a href="#">Фильмы</a>
+                    <a href="#">Персоны</a>
+                    <a href="#">Друзья</a>
+                    <a href="#">Сообщения</a>
+                    <div class="separator"></div>
+                    <a href="#">Активация промокода</a>
+                    <a href="#">Настройки</a>
+                    <a href="#">Часто задоваемые настройки</a>
+                    <a href="#">Чат с поддержкой</a>
+                    <a href="#">Формальности</a>
+                    <div class="separator"></div>
+                    <a href="#">
+                        <span>&plus;</span>
+                        Добавить аккаунт
+                    </a>
+                    <a href="#">
+                        <span>&#10162;</span>
+                        Выйти
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <!-- End header -->
+
+        <main class="main-container">
+            <article class="content">
+                <div class="main-info">
+                    <div class="left-side">
+                        <div class="main-image-container">
+                            <img class="main-image" src="img/22357.webp" alt="">
+                        </div>
+
+                        <button class="button add-to-folder" type="button">
+                            <img src="img/icons/add-folder.svg" alt="">
+                            <span>Добавить в папку</span>
+                        </button>
+
+                        <div class="share-container">
+                            <ul class="social-list">
+                                <li class="social-item">
+                                    <a href="#">
+                                        <img src="img/icons/vk.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="#">
+                                        <img src="img/icons/twitter.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="#">
+                                        <img src="img/icons/telegram.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="button-container">
+                            <button class="buttonError" type="button">Нашли ошибку?</button>
+                            <button class="buttonInfo" type="button">Добавить инфо</button>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <div class="name-container">
+                            <h1 class="first-name">Марго Робби</h1>
+                            <span class="second-name">Margot Robbie</span>
+                        </div>
+
+                        <div class="button favorite-button">
+                            <img src="img/icons/heart.svg" alt="">
+                            <span>Любимая звезда</span>
+                        </div>
+
+                        <section class="about-сontainer">
+                            <h2 class="title">О персоне</h2>
+                            <div class="data-container">
+                                <div class="data-list">
+                                    <div class="data-title">Карьера</div>
+                                    <div class="data-value">Актриса, Продюсер</div>
+                                </div>
+                                <div class="data-list">
+                                    <div class="data-title">Рост</div>
+                                    <div class="data-value"><span style="color: #757575;">1.68 м</span></div>
+                                </div>
+                                <div class="data-list">
+                                    <div class="data-title">Дата рождения</div>
+                                    <div class="data-value">2 июля, 1990 • Рак • <span style="color: #757575;">35
+                                            лет</span>
+                                    </div>
+                                </div>
+                                <div class="data-list">
+                                    <div class="data-title">Место рождения</div>
+                                    <div class="data-value">Дэлби, Квинсленд, Австралия</div>
+                                </div>
+                                <div class="data-list">
+                                    <div class="data-title">Жанры</div>
+                                    <div class="data-value">драма, комедия, фэнтези</div>
+                                </div>
+                                <div class="data-list">
+                                    <div class="data-title">Супруг</div>
+                                    <div class="data-value">Том Акерли <span style="color: #757575;">один ребенок</span>
+                                    </div>
+                                </div>
+                                <div class="data-list">
+                                    <div class="data-title">Всего фильмов</div>
+                                    <div class="data-value"><span style="color: #757575;">113,</span> 2006 — 2027</div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="slider-wrapper">
+                            <button class="btn prev">❮</button>
+                            <button class="btn next">❯</button>
+                            <div class="popular-now">
+                                <h2 class="title">Популярное сейчас</h2>
+                                <div class="slider-container">
+                                    <div class="slider-track">
+                                        <div class="card">
+                                            <div class="rating-poster large">8.1</div>
+                                            <a href="#"><img src="img/1.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Волк с Уолл-стрит</h3>
+                                            </a>
+                                            <span class="card-detail">2013, драма</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster large">7.7</div>
+                                            <a href="#"><img src="img/2.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Однажды в... Голливуде</h3>
+                                            </a>
+                                            <span class="card-detail">2019, драма</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster large">7.4</div>
+                                            <a href="#"><img src="img/3.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Вавилон</h3>
+                                            </a>
+                                            <span class="card-detail">2019, драма</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster middle">6.6</div>
+                                            <a href="#"><img src="img/4.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Барби</h3>
+                                            </a>
+                                            <span class="card-detail">2023, комедия</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster middle">6.4</div>
+                                            <a href="#"><img src="img/6.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Амстердам</h3>
+                                            </a>
+                                            <span class="card-detail">2022, детектив</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster large">8.1</div>
+                                            <a href="#"><img src="img/7.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Скандал</h3>
+                                            </a>
+                                            <span class="card-detail">2019, биография</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster large">7.4</div>
+                                            <a href="#"><img src="img/9.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Игра на понижение</h3>
+                                            </a>
+                                            <span class="card-detail">2015, триллер</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="side-movie-container">
+                            <h3 class="side-title">Лучшие фильмы</h3>
+                            <ul class="movie-list">
+                                <li class="movie-link">
+                                    <a href="#">Волк с Уолл-стрит</a>
+                                </li>
+                                <li class="movie-link">
+                                    <a href="#">Бойфренд из будущего</a>
+                                </li>
+                                <li class="movie-link">
+                                    <a href="#">Однажды в… Голливуде</a>
+                                </li>
+                                <li class="movie-link">
+                                    <a href="#">Вавилон</a>
+                                </li>
+                                <li class="movie-link">
+                                    <a href="#">Тоня против всех</a>
+                                </li>
+                            </ul>
+
+                            <h3 class="side-title">Лучшие сериалы</h3>
+                            <ul class="movie-list">
+                                <li class="movie-link">
+                                    <a href="#">Пэн Американ</a>
+                                </li>
+                                <li class="movie-link">
+                                    <a href="#">Куколка</a>
+                                </li>
+                                <li class="movie-link">
+                                    <a href="#">Saturday Night Live</a>
+                                </li>
+                                <li class="movie-link">
+                                    <a href="#">Уборщица. История матери-одиночки</a>
+                                </li>
+                                <li class="movie-link">
+                                    <a href="#">Отдел убийств</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <br><br><br>
+                <div class="additional-info">
+                    <div class="additional-content">
+                        <div class="navigation-tabs">
+                            <ul>
+                                <li><a href="#">Обзор</a></li>
+                                <li><a href="#">Фото</a></li>
+                                <li><a href="#">Связи</a></li>
+                                <li><a href="#">Награды</a></li>
+                            </ul>
+                        </div>
+                        <section class="slider-wrapper sdf">
+                            <button class="btn prev">❮</button>
+                            <button class="btn next">❯</button>
+                            <div class="movie-online">
+                                <h2 class="title">Фильмы и сериалы онлайн</h2>
+                                <div class="slider-container">
+                                    <div class="slider-track">
+                                        <div class="card">
+                                            <div class="rating-poster large">8.1</div>
+                                            <a href="#"><img src="img/1.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Волк с Уолл-стрит</h3>
+                                            </a>
+                                            <span class="card-detail">2013, драма</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster large">7.7</div>
+                                            <a href="#"><img src="img/2.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Однажды в... Голливуде</h3>
+                                            </a>
+                                            <span class="card-detail">2019, драма</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster large">7.4</div>
+                                            <a href="#"><img src="img/3.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Вавилон</h3>
+                                            </a>
+                                            <span class="card-detail">2019, драма</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster middle">6.6</div>
+                                            <a href="#"><img src="img/4.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Барби</h3>
+                                            </a>
+                                            <span class="card-detail">2023, комедия</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster middle">6.4</div>
+                                            <a href="#"><img src="img/6.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Амстердам</h3>
+                                            </a>
+                                            <span class="card-detail">2022, детектив</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster large">8.1</div>
+                                            <a href="#"><img src="img/7.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Скандал</h3>
+                                            </a>
+                                            <span class="card-detail">2019, биография</span>
+                                        </div>
+                                        <div class="card">
+                                            <div class="rating-poster large">7.4</div>
+                                            <a href="#"><img src="img/9.webp" alt="Фильм"></a>
+                                            <a href="#">
+                                                <h3 class="card-title">Игра на понижение</h3>
+                                            </a>
+                                            <span class="card-detail">2015, триллер</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="you-know">
+
+                            <div class="you-know-title">
+                                <h2 class="title">Знаете ли вы, что...</h2>
+                                <button class="button">
+                                    Добавить
+                                </button>
+                            </div>
+                            <ul class="list-facts">
+                                <li class="fact">
+                                    Полное имя — Марго Элиза Робби (Margot Elise Robbie).
+                                </li>
+                                <li class="fact">
+                                    Есть старший брат — Лахлен, младший брат — Кэмерон и старшая сестра — Аня.
+                                </li>
+                                <li class="fact last">
+                                    В 2007 году Марго окончила колледж Саммерсет в родном городе, а затем переехала в
+                                    Мельбурн, где начала актёрскую карьеру.
+                                </li>
+                            </ul>
+                            <button class="button show-more">
+                                <img src="img/icons/down.svg" alt="">
+                                Показать еще
+                            </button>
+                        </section>
+                        <section class="films-container">
+                            <h2 class="title">Фильмография</h2>
+                            <div class="filters-container">
+                                <div class="filter">
+                                    <button class="filter-toggle">
+                                        <span>Все десятилетия</span>
+                                        <img src="img/icons/drop.svg" alt="">
+                                    </button>
+                                    <div class="filter-content">
+                                        <a class="filter-link  check" href="#" data-value="">Все десятилетия</a>
+                                        <a class="filter-link" href="#" data-value="">2000</a>
+                                        <a class="filter-link" href="#" data-value="">2010</a>
+                                        <a class="filter-link" href="#" data-value="">2020</a>
+                                    </div>
+                                </div>
+                                <div class="filter">
+                                    <button class="filter-toggle">
+                                        <span>Все жанры</span>
+                                        <img src="img/icons/drop.svg" alt="">
+                                    </button>
+                                    <div class="filter-content">
+                                        <a class="filter-link  check" href="#" data-value="">Все жанры</a>
+                                        <a class="filter-link" href="#" data-value="">аниме</a>
+                                        <a class="filter-link" href="#" data-value="">биография</a>
+                                        <a class="filter-link" href="#" data-value="">боевик</a>
+                                        <a class="filter-link" href="#" data-value="">вестерн</a>
+                                        <a class="filter-link" href="#" data-value="">военный</a>
+                                        <a class="filter-link" href="#" data-value="">детектив</a>
+                                        <a class="filter-link" href="#" data-value="">для взрослых</a>
+                                    </div>
+                                </div>
+                                <div class="filter">
+                                    <button class="filter-toggle">
+                                        <span>Сортировка по году</span>
+                                        <img src="img/icons/drop.svg" alt="">
+                                    </button>
+                                    <div class="filter-content">
+                                        <a class="filter-link  check" href="#" data-value="">Сортировка по году</a>
+                                        <a class="filter-link" href="#" data-value="">Сортировка по хранологии</a>
+                                        <a class="filter-link" href="#" data-value="">Сортировка по названию</a>
+                                        <a class="filter-link" href="#" data-value="">Сортировка по рейтингу
+                                            кинопоиска</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="film-wrapper">
+                                <div class="film-information">
+                                    <a href="#">
+                                        <h3 class="film-first-title">Барби</h3>
+                                        <span class="film-second-title">Barbie, 2023</span>
+                                        <span class="role">Barbie</span>
+                                    </a>
+                                </div>
+                                <div class="film-rating">
+                                    <span class="rating-middle">6.6</span>
+                                    <span class="grade">237 486</span>
+                                </div>
+                                <div class="user-action-buttons">
+                                    <button class="button to-watch-btn">
+                                        <img src="img/icons/to-bookmark.svg" alt="">
+                                        Буду смотреть
+                                    </button>
+                                    <button class="button to-bookmark">
+                                        <img src="img/icons/star2.svg" alt="">
+                                    </button>
+                                    <button class="to-ellipsis-btn">
+                                        <img src="img/icons/ellipsis.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="film-wrapper">
+                                <div class="film-information">
+                                    <a href="#">
+                                        <h3 class="film-first-title">Вавилон</h3>
+                                        <span class="film-second-title">Babylon, 2022</span>
+                                            <span class="role">Nellie LaRoy</span>
+                                    </a>
+                                </div>
+                                <div class="film-rating">
+                                    <span class="rating-large">7.4</span>
+                                    <span class="grade">88 163</span>
+                                </div>
+                                <div class="user-action-buttons">
+                                    <button class="button to-watch-btn">
+                                        <img src="img/icons/to-bookmark.svg" alt="">
+                                        Буду смотреть
+                                    </button>
+                                    <button class="button to-bookmark">
+                                        <img src="img/icons/star2.svg" alt="">
+                                    </button>
+                                    <button class="to-ellipsis-btn">
+                                        <img src="img/icons/ellipsis.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="film-wrapper">
+                                <div class="film-information">
+                                    <a href="#">
+                                        <h3 class="film-first-title">Амстердам</h3>
+                                        <span class="film-second-title">Amsterdam, 2022</span>
+                                        <span class="role">Valerie Voze</span>
+                                    </a>
+                                </div>
+                                <div class="film-rating">
+                                    <span class="rating-middle">6.4</span>
+                                    <span class="grade">28 288</span>
+                                </div>
+                                <div class="user-action-buttons">
+                                    <button class="button to-watch-btn">
+                                        <img src="img/icons/to-bookmark.svg" alt="">
+                                        Буду смотреть
+                                    </button>
+                                    <button class="button to-bookmark">
+                                        <img src="img/icons/star2.svg" alt="">
+                                    </button>
+                                    <button class="to-ellipsis-btn">
+                                        <img src="img/icons/ellipsis.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="film-wrapper">
+                                <div class="film-information">
+                                    <a href="#">
+                                        <h3 class="film-first-title">Однажды в... Голливуде</h3>
+                                        <span class="film-second-title">Once upon a time in... Hollywood, 2019</span>
+                                            <span class="role">Sharon Tate</span>
+                                    </a>
+                                </div>
+                                <div class="film-rating">
+                                    <span class="rating-large">7.7</span>
+                                    <span class="grade">688 441</span>
+                                </div>
+                                <div class="user-action-buttons">
+                                    <button class="button to-watch-btn">
+                                        <img src="img/icons/to-bookmark.svg" alt="">
+                                        Буду смотреть
+                                    </button>
+                                    <button class="button to-bookmark">
+                                        <img src="img/icons/star2.svg" alt="">
+                                    </button>
+                                    <button class="to-ellipsis-btn">
+                                        <img src="img/icons/ellipsis.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="film-wrapper">
+                                <div class="film-information">
+                                    <a href="#">
+                                        <h3 class="film-first-title">Тоня против всех</h3>
+                                        <span class="film-second-title">I, Tonya, 2017</span>
+                                            <span class="role">Tonya</span>
+                                    </a>
+                                </div>
+                                <div class="film-rating">
+                                    <span class="rating-large">7.3</span>
+                                    <span class="grade">218 95</span>
+                                </div>
+                                <div class="user-action-buttons">
+                                    <button class="button to-watch-btn">
+                                        <img src="img/icons/to-bookmark.svg" alt="">
+                                        Буду смотреть
+                                    </button>
+                                    <button class="button to-bookmark">
+                                        <img src="img/icons/star2.svg" alt="">
+                                    </button>
+                                    <button class="to-ellipsis-btn">
+                                        <img src="img/icons/ellipsis.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="film-wrapper">
+                                <div class="film-information">
+                                    <a href="#">
+                                        <h3 class="film-first-title">Отряд самоубиц</h3>
+                                        <span class="film-second-title">Suicide Squad, 2016</span>
+                                        <span class="role">Harley Quinn</span>
+                                    </a>
+                                </div>
+                                <div class="film-rating">
+                                    <span class="rating-middle">6.1</span>
+                                    <span class="grade">556 488</span>
+                                </div>
+                                <div class="user-action-buttons">
+                                    <button class="button to-watch-btn">
+                                        <img src="img/icons/to-bookmark.svg" alt="">
+                                        Буду смотреть
+                                    </button>
+                                    <button class="button to-bookmark">
+                                        <img src="img/icons/star2.svg" alt="">
+                                    </button>
+                                    <button class="to-ellipsis-btn">
+                                        <img src="img/icons/ellipsis.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
