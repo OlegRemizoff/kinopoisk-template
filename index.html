@@ -11,397 +11,630 @@
 </head>
 
 <body>
-    <div class="page">
+    <!--Header-->
+    <header class="header">
+        <!-- Navbar kinopoisk menu -->
+        <div class="nav-dropdown">
+            <button class="nav-dropdown-btn" type="button">
+                <img src="img/icons/nav.svg" alt="">
+            </button>
+            <div class="header-logo">
+                <a href="index.html"><img src="img/icons/kinopoisk.svg" alt=""></a>
+            </div>
+            <nav class="nav-link-container">
+                <ul class="nav-item-container">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/home.svg" alt="">
+                            <span>Главная</span>
+                        </a>
+                    </li>
 
-        <!--Header-->
-        <header class="header">
-            <!-- Navbar kinopoisk menu -->
-            <div class="nav-dropdown">
-                <button class="nav-dropdown-btn" type="button">
-                    <img src="img/icons/nav.svg" alt="">
-                </button>
-                <div class="header-logo">
-                    <a href="index.html"><img src="img/icons/kinopoisk.svg" alt=""></a>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/play.svg" alt="">
+                            <span>Онлайн-кинотеатр</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/cart.svg" alt="">
+                            <span>Магазин</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/movie.svg" alt="">
+                            <span>Фильмы</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/serial.svg" alt="">
+                            <span>Сериалы</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/tv.svg" alt="">
+                            <span>Телеканалы</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/sport.svg" alt="">
+                            <span>Спорт</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/sub.svg" alt="">
+                            <span>Подписки</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/ticket.svg" alt="">
+                            <span>Блиеты в кино</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img class="nav-logo" src="img/icons/media.svg" alt="">
+                            <span>Медиа</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Kino and Ticket -->
+        <div class="header-link-container">
+            <a href="#" class="header-link">
+                <img src="img/icons/play.svg" alt="">
+                <span>Онлайн-кинотеатр</span>
+            </a>
+        </div>
+        <div class="header-link-container">
+            <a href="#" class="header-link">
+                <img src="img/icons/ticket.svg" alt="">
+                <span>Билеты в кино</span>
+            </a>
+        </div>
+
+        <!-- Search panel -->
+        <div class="header-search-container">
+            <form action="index.html">
+                <input type="text" class="header-search" name="kp_query" aria-label="Фильмы, сериалы, персоны"
+                    placeholder="Фильмы, сериалы, персоны">
+            </form>
+            <button class="header-tools-button" type="submit"><img src="img/icons/search-tools.svg" alt=""></button>
+            <button class="header-search-button" type="submit"><img src="img/icons/search.svg" alt=""></button>
+        </div>
+
+        <!-- Bookmark button -->
+        <div class="header-bookmark">
+            <a href="#"><img src="img/icons/bookmark.svg" alt=""></a>
+        </div>
+        <!-- Watch movie btn -->
+        <div class="free-movie-watch">
+            <button type="button">Смотреть кино бесплатно</button>
+        </div>
+        <!-- Avatar menu -->
+        <div class="avatar-dropdown">
+            <button class="avatar-dropdown-btn" type="button">
+                <img src="img/islands-200.webp" alt="">
+            </button>
+            <nav class="avatar-link-group">
+                <img src="img/islands-200.webp" alt="">
+                <h3>Олег Ремизов</h3>
+                <span>+7 952 ***‒**‒22 • remi3off</span>
+                <div class="separator"></div>
+                <a href="#">Мой профиль</a>
+                <a href="#">Оценки</a>
+                <a href="#">Фильмы</a>
+                <a href="#">Персоны</a>
+                <a href="#">Друзья</a>
+                <a href="#">Сообщения</a>
+                <div class="separator"></div>
+                <a href="#">Активация промокода</a>
+                <a href="#">Настройки</a>
+                <a href="#">Часто задоваемые настройки</a>
+                <a href="#">Чат с поддержкой</a>
+                <a href="#">Формальности</a>
+                <div class="separator"></div>
+                <a href="#">
+                    <span>&plus;</span>
+                    Добавить аккаунт
+                </a>
+                <a href="#">
+                    <span>&#10162;</span>
+                    Выйти
+                </a>
+            </nav>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <main class="main-container">
+        <article class="content">
+            <div class="main-info">
+                <div class="left-side">
+                    <div class="main-image-container">
+                        <img class="main-image" src="img/43093.webp" alt="">
+                    </div>
+
+                    <div class="movie-trailer">
+                        <img class="movie-trailer__image" src="./img/82378.png" alt="">
+                        <p class="movie-trailer__title">
+                            Трейлер (дублированный)
+                        </p>
+                        <span class="movie-trailer__date">
+                            21 мая 2019
+                        </span>
+                    </div>
+
+                    <button class="button add-to-folder" type="button">
+                        <img src="img/icons/add-folder.svg" alt="">
+                        <span>Добавить в папку</span>
+                    </button>
                 </div>
-                <nav class="nav-link-container">
-                    <ul class="nav-item-container">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/home.svg" alt="">
-                                <span>Главная</span>
-                            </a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/play.svg" alt="">
-                                <span>Онлайн-кинотеатр</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/cart.svg" alt="">
-                                <span>Магазин</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/movie.svg" alt="">
-                                <span>Фильмы</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/serial.svg" alt="">
-                                <span>Сериалы</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/tv.svg" alt="">
-                                <span>Телеканалы</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/sport.svg" alt="">
-                                <span>Спорт</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/sub.svg" alt="">
-                                <span>Подписки</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/ticket.svg" alt="">
-                                <span>Блиеты в кино</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img class="nav-logo" src="img/icons/media.svg" alt="">
-                                <span>Медиа</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-            </div>
-
-            <!-- Kino and Ticket -->
-            <div class="header-link-container">
-                <a href="#" class="header-link">
-                    <img src="img/icons/play.svg" alt="">
-                    <span>Онлайн-кинотеатр</span>
-                </a>
-            </div>
-            <div class="header-link-container">
-                <a href="#" class="header-link">
-                    <img src="img/icons/ticket.svg" alt="">
-                    <span>Билеты в кино</span>
-                </a>
-            </div>
-
-            <!-- Search panel -->
-            <div class="header-search-container">
-                <form action="index.html">
-                    <input type="text" class="header-search" name="kp_query" aria-label="Фильмы, сериалы, персоны"
-                        placeholder="Фильмы, сериалы, персоны">
-                </form>
-                <button class="header-tools-button" type="submit"><img src="img/icons/search-tools.svg" alt=""></button>
-                <button class="header-search-button" type="submit"><img src="img/icons/search.svg" alt=""></button>
-            </div>
-
-            <!-- Bookmark button -->
-            <div class="header-bookmark">
-                <a href="#"><img src="img/icons/bookmark.svg" alt=""></a>
-            </div>
-            <!-- Watch movie btn -->
-            <div class="free-movie-watch">
-                <button type="button">Смотреть кино бесплатно</button>
-            </div>
-            <!-- Avatar menu -->
-            <div class="avatar-dropdown">
-                <button class="avatar-dropdown-btn" type="button">
-                    <img src="img/islands-200.webp" alt="">
-                </button>
-                <nav class="avatar-link-group">
-                    <img src="img/islands-200.webp" alt="">
-                    <h3>Олег Ремизов</h3>
-                    <span>+7 952 ***‒**‒22 • remi3off</span>
-                    <div class="separator"></div>
-                    <a href="#">Мой профиль</a>
-                    <a href="#">Оценки</a>
-                    <a href="#">Фильмы</a>
-                    <a href="#">Персоны</a>
-                    <a href="#">Друзья</a>
-                    <a href="#">Сообщения</a>
-                    <div class="separator"></div>
-                    <a href="#">Активация промокода</a>
-                    <a href="#">Настройки</a>
-                    <a href="#">Часто задоваемые настройки</a>
-                    <a href="#">Чат с поддержкой</a>
-                    <a href="#">Формальности</a>
-                    <div class="separator"></div>
-                    <a href="#">
-                        <span>&plus;</span>
-                        Добавить аккаунт
-                    </a>
-                    <a href="#">
-                        <span>&#10162;</span>
-                        Выйти
-                    </a>
-                </nav>
-            </div>
-        </header>
-        <!-- End header -->
-
-        <main class="main-container">
-            <article class="content">
-                <div class="main-info">
-                    <div class="left-side">
-                        <div class="main-image-container">
-                            <img class="main-image" src="img/43093.webp" alt="">
-                        </div>
-
-                        <div class="movie-trailer">
-                            <img class="movie-trailer__image" src="./img/82378.png" alt="">
-                            <p class="movie-trailer__title">
-                                Трейлер (дублированный)
-                            </p>
-                            <span class="movie-trailer__date">
-                                21 мая 2019
-                            </span>
-                        </div>
-
-                        <button class="button add-to-folder" type="button">
-                            <img src="img/icons/add-folder.svg" alt="">
-                            <span>Добавить в папку</span>
+                <div class="center">
+                    <div class="name-container">
+                        <h1 class="first-name">Однажды в… Голливуде (2019)</h1>
+                        <span class="second-name">Once Upon a Time in... Hollywood 18+</span>
+                        <p class="movie-slogan">
+                            Можно ли переписать историю? Самый ностальгический фильм Тарантино — с Шэрон Тейт,
+                            Брюсом Ли и Чарли Мэнсоном
+                        </p>
+                    </div>
+                    <div class="user-action-buttons">
+                        <button class="button to-watch-btn">
+                            <img src="img/icons/to-bookmark.svg" alt="">
+                            <span>Буду смотреть</span>
+                        </button>
+                        <button class="to-ellipsis-btn">
+                            <img src="img/icons/ellipsis.svg" alt="">
                         </button>
                     </div>
 
-                    <div class="center">
-                        <div class="name-container">
-                            <h1 class="first-name">Однажды в… Голливуде (2019)</h1>
-                            <span class="second-name">Once Upon a Time in... Hollywood 18+</span>
-                            <p class="movie-slogan">
-                                Можно ли переписать историю? Самый ностальгический фильм Тарантино — с Шэрон Тейт,
-                                Брюсом Ли и Чарли Мэнсоном
-                            </p>
-                        </div>
-                        <div class="user-action-buttons">
-                            <button class="button to-watch-btn">
-                                <img src="img/icons/to-bookmark.svg" alt="">
-                                <span>Буду смотреть</span>
-                            </button>
-                            <button class="to-ellipsis-btn">
-                                <img src="img/icons/ellipsis.svg" alt="">
-                            </button>
-                        </div>
-
-                        <section class="about-сontainer">
-                            <h2 class="title">О фильме</h2>
-                            <div class="data-container">
-                                <div class="data-list">
-                                    <div class="data-title">Год производства</div>
-                                    <div class="data-value">2019</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Страна</div>
-                                    <div class="data-value"><span>США, Великобритания, Китай</span></div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Жанр</div>
-                                    <div class="data-value">драма, комедия</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Слоган</div>
-                                    <div class="data-value"><span style="color: #757575;">«9-й фильм Квентина
-                                            Тарантино»</span>
-                                    </div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Режиссер</div>
-                                    <div class="data-value">Квентин Тарантино</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Сценарий</div>
-                                    <div class="data-value">Квентин Тарантино</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Продюссер</div>
-                                    <div class="data-value">Джеффри Чан, Уильям Пол Кларк, Дэвид Хейман, ...</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Оператор</div>
-                                    <div class="data-value">Роберт Ричардсон</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Композитор</div>
-                                    <div class="data-value">&#8212</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Художник</div>
-                                    <div class="data-value">Барбара Линг, Тристан Пэрис Борн, Джон Декстер, ...</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Монтаж</div>
-                                    <div class="data-value">Фред Раскин</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Бюджет</div>
-                                    <div class="data-value">$90 000 000</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Сборы в России</div>
-                                    <div class="data-value">$19 260 721</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Сборы в мире</div>
-                                    <div class="data-value">$377 426 903</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Премьера в России</div>
-                                    <div class="data-value">8 августа 2019 «WDSSPR» IMAX</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Премьера в мире</div>
-                                    <div class="data-value">21 мая 2019, ...</div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Цифровой релиз</div>
-                                    <div class="data-value"><span style="color: #757575;">25 ноября 2019, «Sony Pictures
-                                            Home Entertainment»</span></div>
-                                </div>
-                                <div class="data-list">
-                                    <div class="data-title">Время</div>
-                                    <div class="data-value"><span style="color: #757575;">2 ч 41 мин</span></div>
+                    <section class="about-сontainer">
+                        <h2 class="title">О фильме</h2>
+                        <div class="data-container">
+                            <div class="data-list">
+                                <div class="data-title">Год производства</div>
+                                <div class="data-value">2019</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Страна</div>
+                                <div class="data-value"><span>США, Великобритания, Китай</span></div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Жанр</div>
+                                <div class="data-value">драма, комедия</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Слоган</div>
+                                <div class="data-value"><span style="color: #757575;">«9-й фильм Квентина
+                                        Тарантино»</span>
                                 </div>
                             </div>
-                        </section>
+                            <div class="data-list">
+                                <div class="data-title">Режиссер</div>
+                                <div class="data-value">Квентин Тарантино</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Сценарий</div>
+                                <div class="data-value">Квентин Тарантино</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Продюссер</div>
+                                <div class="data-value">Джеффри Чан, Уильям Пол Кларк, Дэвид Хейман, ...</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Оператор</div>
+                                <div class="data-value">Роберт Ричардсон</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Композитор</div>
+                                <div class="data-value">&#8212</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Художник</div>
+                                <div class="data-value">Барбара Линг, Тристан Пэрис Борн, Джон Декстер, ...</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Монтаж</div>
+                                <div class="data-value">Фред Раскин</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Бюджет</div>
+                                <div class="data-value">$90 000 000</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Сборы в России</div>
+                                <div class="data-value">$19 260 721</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Сборы в мире</div>
+                                <div class="data-value">$377 426 903</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Премьера в России</div>
+                                <div class="data-value">8 августа 2019 «WDSSPR» IMAX</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Премьера в мире</div>
+                                <div class="data-value">21 мая 2019, ...</div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Цифровой релиз</div>
+                                <div class="data-value"><span style="color: #757575;">25 ноября 2019, «Sony Pictures
+                                        Home Entertainment»</span></div>
+                            </div>
+                            <div class="data-list">
+                                <div class="data-title">Время</div>
+                                <div class="data-value"><span style="color: #757575;">2 ч 41 мин</span></div>
+                            </div>
+                        </div>
+                    </section>
 
+                </div>
+
+                <div class="right-side">
+                    <div class="movie-stats">
+                        <p class="movie-stats__rating">7.7</p>
+                        <p class="movie-stats__count">693 000 оценки</p>
+                        <p class="movie-stats__reviews">380 рецензий</p>
+                        <p class="movie-stats__title">Оценить фильм</p>
+                        <div class="button movie-stats__block">
+                            <ul class="movie-stats__list">
+                                <li class="movie-stats__number"><a href="#">1</a></li>
+                                <li class="movie-stats__number"><a href="#">2</a></li>
+                                <li class="movie-stats__number"><a href="#">3</a></li>
+                                <li class="movie-stats__number"><a href="#">4</a></li>
+                                <li class="movie-stats__number"><a href="#">5</a></li>
+                                <li class="movie-stats__number"><a href="#">6</a></li>
+                                <li class="movie-stats__number"><a href="#">7</a></li>
+                                <li class="movie-stats__number"><a href="#">8</a></li>
+                                <li class="movie-stats__number"><a href="#">9</a></li>
+                                <li class="movie-stats__number"><a href="#">10</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="side-movie-container">
+                        <h3 class="side-title">В главных ролях ></h3>
+                        <ul class="movie-list">
+                            <li class="movie-link">
+                                <a href="/person.html">Леонардо ДиКаприо</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Брэд Питт</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Марго Робби</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Эмиль Хирш</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Маргарет Куолли</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Тимоти Олифант</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Джулия Баттерз</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Остин Батлер</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Дакота Фаннинг</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Брюс Дерн</a>
+                            </li>
+                        </ul>
+                        <p>
+                            <a class="actor-count" href="#">240 актеров</a>
+                        </p>
+                        <h3 class="side-title">Роли дублировали ></h3>
+                        <ul class="movie-list">
+                            <li class="movie-link">
+                                <a href="/person.html">Сергей Бурунов</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Всеволод Кузнецов</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Татьяна Шитова</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Диомид Виноградов</a>
+                            </li>
+                            <li class="movie-link">
+                                <a href="/person.html">Мария Борисова</a>
+                            </li>
+                        </ul>
+                        <p>
+                            <a class="actor-count" href="#">51 актер</a>
+                        </p>
 
-                    <div class="right-side">
-                        <div class="movie-stats">
-                            <p class="movie-stats__rating">7.7</p>
-                            <p class="movie-stats__count">693 000 оценки</p>
-                            <p class="movie-stats__reviews">380 рецензий</p>
-                            <p class="movie-stats__title">Оценить фильм</p>
-                            <div class="button movie-stats__block">
-                                <ul class="movie-stats__list">
-                                    <li class="movie-stats__number"><a href="#">1</a></li>
-                                    <li class="movie-stats__number"><a href="#">2</a></li>
-                                    <li class="movie-stats__number"><a href="#">3</a></li>
-                                    <li class="movie-stats__number"><a href="#">4</a></li>
-                                    <li class="movie-stats__number"><a href="#">5</a></li>
-                                    <li class="movie-stats__number"><a href="#">6</a></li>
-                                    <li class="movie-stats__number"><a href="#">7</a></li>
-                                    <li class="movie-stats__number"><a href="#">8</a></li>
-                                    <li class="movie-stats__number"><a href="#">9</a></li>
-                                    <li class="movie-stats__number"><a href="#">10</a></li>
-                                </ul>
-                            </div>
+                        <div class="award">
+                            <img class="award__img" src="./img/globe.webp" alt="">
+                            <span class="award__num">3</spa>
                         </div>
-                        <div class="side-movie-container">
-                            <h3 class="side-title">В главных ролях ></h3>
-                            <ul class="movie-list">
-                                <li class="movie-link">
-                                    <a href="/person.html">Леонардо ДиКаприо</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Брэд Питт</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Марго Робби</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Эмиль Хирш</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Маргарет Куолли</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Тимоти Олифант</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Джулия Баттерз</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Остин Батлер</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Дакота Фаннинг</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Брюс Дерн</a>
-                                </li>
-                            </ul>
-                            <p>
-                                <a class="actor-count" href="#">240 актеров</a>
-                            </p>
-                            <h3 class="side-title">Роли дублировали ></h3>
-                            <ul class="movie-list">
-                                <li class="movie-link">
-                                    <a href="/person.html">Сергей Бурунов</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Всеволод Кузнецов</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Татьяна Шитова</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Диомид Виноградов</a>
-                                </li>
-                                <li class="movie-link">
-                                    <a href="/person.html">Мария Борисова</a>
-                                </li>
-                            </ul>
-                            <p>
-                                <a class="actor-count" href="#">51 актер</a>
-                            </p>
-
-                            <div class="award">
-                                <img class="award__img" src="./img/globe.webp" alt="">
-                                <span class="award__num">3</spa>
+                    </div>
+                </div>
+            </div>
+            <!-- Social and Slider -->
+            <section class="share-and-slide">
+                <div class="share-container">
+                    <ul class="social-list">
+                        <li class="social-item">
+                            <a href="#">
+                                <img src="img/icons/vk.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <img src="img/icons/twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="#">
+                                <img src="img/icons/telegram.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="button-container">
+                        <button class="buttonError" type="button">Нашли ошибку?</button>
+                        <button class="buttonInfo" type="button">Добавить инфо</button>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <button class="btn prev">❮</button>
+                    <button class="btn next">❯</button>
+                    <div class="popular-now">
+                        <h2 class="title">Сиквелы, приквелы и ремейки ></h2>
+                        <div class="slider-container">
+                            <div class="slider-track">
+                                <div class="card">
+                                    <div class="rating-poster large">8.1</div>
+                                    <a href="#"><img src="img/1.webp" alt="Фильм"></a>
+                                    <a href="#">
+                                        <h3 class="card-title">Волк с Уолл-стрит</h3>
+                                    </a>
+                                    <span class="card-detail">2013, драма</span>
+                                </div>
+                                <div class="card">
+                                    <div class="rating-poster large">7.7</div>
+                                    <a href="#"><img src="img/2.webp" alt="Фильм"></a>
+                                    <a href="#">
+                                        <h3 class="card-title">Однажды в... Голливуде</h3>
+                                    </a>
+                                    <span class="card-detail">2019, драма</span>
+                                </div>
+                                <div class="card">
+                                    <div class="rating-poster large">7.4</div>
+                                    <a href="#"><img src="img/3.webp" alt="Фильм"></a>
+                                    <a href="#">
+                                        <h3 class="card-title">Вавилон</h3>
+                                    </a>
+                                    <span class="card-detail">2019, драма</span>
+                                </div>
+                                <div class="card">
+                                    <div class="rating-poster middle">6.6</div>
+                                    <a href="#"><img src="img/4.webp" alt="Фильм"></a>
+                                    <a href="#">
+                                        <h3 class="card-title">Барби</h3>
+                                    </a>
+                                    <span class="card-detail">2023, комедия</span>
+                                </div>
+                                <div class="card">
+                                    <div class="rating-poster middle">6.4</div>
+                                    <a href="#"><img src="img/6.webp" alt="Фильм"></a>
+                                    <a href="#">
+                                        <h3 class="card-title">Амстердам</h3>
+                                    </a>
+                                    <span class="card-detail">2022, детектив</span>
+                                </div>
+                                <div class="card">
+                                    <div class="rating-poster large">8.1</div>
+                                    <a href="#"><img src="img/7.webp" alt="Фильм"></a>
+                                    <a href="#">
+                                        <h3 class="card-title">Скандал</h3>
+                                    </a>
+                                    <span class="card-detail">2019, биография</span>
+                                </div>
+                                <div class="card">
+                                    <div class="rating-poster large">7.4</div>
+                                    <a href="#"><img src="img/9.webp" alt="Фильм"></a>
+                                    <a href="#">
+                                        <h3 class="card-title">Игра на понижение</h3>
+                                    </a>
+                                    <span class="card-detail">2015, триллер</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Social and Slider -->
-                <section class="share-and-slide">
-                    <div class="share-container">
-                        <ul class="social-list">
-                            <li class="social-item">
-                                <a href="#">
-                                    <img src="img/icons/vk.png" alt="">
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="#">
-                                    <img src="img/icons/twitter.png" alt="">
-                                </a>
-                            </li>
-                            <li class="social-item">
-                                <a href="#">
-                                    <img src="img/icons/telegram.png" alt="">
-                                </a>
-                            </li>
+            </section>
+            <!-- End social and slider -->
+
+            <div class="additional-info">
+                <div class="additional-content">
+                    <div class="navigation-tabs">
+                        <ul>
+                            <li><a href="#">Обзор</a></li>
+                            <li><a href="#">Награды</a></li>
+                            <li><a href="#">Премьеры</a></li>
+                            <li><a href="#">Изображения</a></li>
+                            <li><a href="#">Трейлеры</a></li>
+                            <li><a href="#">Студии</a></li>
+                            <li><a href="#">Трейлеры</a></li>
+                            <li><a href="#">Рецензии</a></li>
+                            <li><a href="#">Ещё...</a></li>
                         </ul>
-                        <div class="button-container">
-                            <button class="buttonError" type="button">Нашли ошибку?</button>
-                            <button class="buttonInfo" type="button">Добавить инфо</button>
+                    </div>
+                    <p class="movie-description">
+                        1969 год, золотой век Голливуда уже закончился. Известный актёр Рик Далтон и его дублер
+                        Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
+                    </p>
+
+                    <!-- User-rating -->
+                    <h2 class="user-rating__title">Рейтинг фильма</h2>
+                    <div class="user-rating-container">
+                        <div class="user-rating__stars">
+                            <form action="/" method="post">
+                                <div class="rating-group">
+
+                                    <input type="radio" id="star-10" name="rating" value="10">
+                                    <label for="star-10" title="Оценка 10">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">10</span>
+                                    </label>
+
+                                    <input type="radio" id="star-9" name="rating" value="9">
+                                    <label for="star-9" title="Оценка 9">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">9</span>
+                                    </label>
+
+                                    <input type="radio" id="star-8" name="rating" value="8">
+                                    <label for="star-8" title="Оценка 8">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">8</span>
+                                    </label>
+
+                                    <input type="radio" id="star-7" name="rating" value="7">
+                                    <label for="star-7" title="Оценка 7">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">7</span>
+                                    </label>
+
+                                    <input type="radio" id="star-6" name="rating" value="6">
+                                    <label for="star-6" title="Оценка 6">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">6</span>
+                                    </label>
+                                    <input type="radio" id="star-5" name="rating" value="5">
+                                    <label for="star-5" title="Оценка 5">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">5</span>
+                                    </label>
+
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label for="star-4" title="Оценка 4">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">4</span>
+                                    </label>
+
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label for="star-3" title="Оценка 3">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">3</span>
+                                    </label>
+
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label for="star-2" title="Оценка 2">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">2</span>
+                                    </label>
+
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label for="star-1" title="Оценка 1">
+                                        <svg viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                                        </svg>
+                                        <span class="star-number">1</span>
+                                    </label>
+                                </div>
+                                <button type="submit" hidden>Отправить оценку</button>
+                            </form>
+                        </div>
+                        <div class="user-rating__other">
+                            <span class="user-rating__number">7.7</span>
+                            <span class="user-rating__stats">695 666 оценок <strong>IMDb: 7.60</strong> 955 000
+                                оценок</span>
                         </div>
                     </div>
-                    <div class="slider-wrapper">
+                    <!-- End user-rating -->
+
+                    <!-- Critiс-rating -->
+                    <div class="critic-rating-container">
+                        <div class="rating-container">
+                            <h3 class="critic-title">Рейтинг кинокритиков в мире </h3>
+                            <div class="rating-bar">
+                                <div class="rating-fill" style="width: 86%;">
+                                    <span>497</span>
+                                </div>
+                                <div class="rating-empty">
+                                    <span style="color: red;">83</span>
+                                </div>
+                            </div>
+                            <div class="rating-label">
+                                <span class="rating-label__title">86%</span>
+                                <span class="rating-label__count">580 оценок</span>
+                                <img src="./img/icons/star-dark.svg" alt="">
+                                <span style="font-size: 20px; margin-left: 5px;">7.9</span>
+                            </div>
+                        </div>
+                        <div class="rating-container">
+                            <h3 class="critic-title">
+                                В России
+                                <img src="/img/icons/right.svg" alt="">
+                            </h3>
+                            <div class="rating-bar">
+                                <div class="rating-fill" style="width: 100%;">
+                                    <span style="color: #093;">13</span>
+                                </div>
+                                <div class="rating-empty"></div>
+                            </div>
+                            <div class="rating-label">
+                                <span class="rating-label__title">100%</span>
+                                <span class="rating-label__count">13 оценок</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End critic-rating -->
+
+                    <section class="slider-wrapper sdf">
                         <button class="btn prev">❮</button>
                         <button class="btn next">❯</button>
-                        <div class="popular-now">
-                            <h2 class="title">Сиквелы, приквелы и ремейки ></h2>
+                        <div class="movie-online">
+                            <h2 class="title">Если вам понравился этот фильм ></h2>
                             <div class="slider-container">
                                 <div class="slider-track">
                                     <div class="card">
@@ -463,390 +696,252 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- End social and slider -->
+                    </section>
 
-                <div class="additional-info">
-                    <div class="additional-content">
-                        <div class="navigation-tabs">
-                            <ul>
-                                <li><a href="#">Обзор</a></li>
-                                <li><a href="#">Награды</a></li>
-                                <li><a href="#">Премьеры</a></li>
-                                <li><a href="#">Изображения</a></li>
-                                <li><a href="#">Трейлеры</a></li>
-                                <li><a href="#">Студии</a></li>
-                                <li><a href="#">Трейлеры</a></li>
-                                <li><a href="#">Рецензии</a></li>
-                                <li><a href="#">Ещё...</a></li>
-                            </ul>
+                    <section class="you-know">
+                        <div class="you-know-title">
+                            <h2 class="title">Знаете ли вы, что...</h2>
+                            <button class="button">Добавить</button>
                         </div>
-                        <p class="movie-description">
-                            1969 год, золотой век Голливуда уже закончился. Известный актёр Рик Далтон и его дублер
-                            Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.
-                        </p>
+                        <ul class="list-facts">
+                            <li class="fact">
+                                Съёмки фильма проходили с 18 июня по 1 ноября 2018 года.
+                            </li>
+                            <li class="fact">
+                                Шэрон Тейт <a href="/person.html" class="fact-link">(Марго Робби)</a> смотрит в
+                                кинотеатре фильм со своим участием «Команда разрушителей» (1968). Было принято
+                                решение использовать кадры оригинального фильма, а не переснимать отдельные
+                                сцены с Робби в роли Шэрон. Непосредственно перед фильмом она смотрит трейлер
+                                картины «С.С. и Компания» (1970).
+                            </li>
+                            <li class="fact last">
+                                Стена с мозаикой в аэропорту, мимо которой идут герои, частично повторяет
+                                мозаику на стене в аэропорту из фильма <a class="fact-link" href="#">Тарантино</a>
+                                <a class="fact-link" href="#">«Джеки Браун» (1997).</a>
+                            </li>
+                        </ul>
+                        <button class="button show-more">
+                            <img src="img/icons/down.svg" alt="">
+                            Показать еще
+                        </button>
+                    </section>
 
-                        <!-- User-rating -->
-                        <h2 class="user-rating__title">Рейтинг фильма</h2>
-                        <div class="user-rating-container">
-                            <div class="user-rating__stars">
-                                <form action="/" method="post">
-                                    <div class="rating-group">
-
-                                        <input type="radio" id="star-10" name="rating" value="10">
-                                        <label for="star-10" title="Оценка 10">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">10</span>
-                                        </label>
-
-                                        <input type="radio" id="star-9" name="rating" value="9">
-                                        <label for="star-9" title="Оценка 9">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">9</span>
-                                        </label>
-
-                                        <input type="radio" id="star-8" name="rating" value="8">
-                                        <label for="star-8" title="Оценка 8">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">8</span>
-                                        </label>
-
-                                        <input type="radio" id="star-7" name="rating" value="7">
-                                        <label for="star-7" title="Оценка 7">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">7</span>
-                                        </label>
-
-                                        <input type="radio" id="star-6" name="rating" value="6">
-                                        <label for="star-6" title="Оценка 6">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">6</span>
-                                        </label>
-                                        <input type="radio" id="star-5" name="rating" value="5">
-                                        <label for="star-5" title="Оценка 5">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">5</span>
-                                        </label>
-
-                                        <input type="radio" id="star-4" name="rating" value="4">
-                                        <label for="star-4" title="Оценка 4">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">4</span>
-                                        </label>
-
-                                        <input type="radio" id="star-3" name="rating" value="3">
-                                        <label for="star-3" title="Оценка 3">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">3</span>
-                                        </label>
-
-                                        <input type="radio" id="star-2" name="rating" value="2">
-                                        <label for="star-2" title="Оценка 2">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">2</span>
-                                        </label>
-
-                                        <input type="radio" id="star-1" name="rating" value="1">
-                                        <label for="star-1" title="Оценка 1">
-                                            <svg viewBox="0 0 24 24">
-                                                <path
-                                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                                            </svg>
-                                            <span class="star-number">1</span>
-                                        </label>
-                                    </div>
-                                    <button type="submit" hidden>Отправить оценку</button>
-                                </form>
-                            </div>
-                            <div class="user-rating__other">
-                                <span class="user-rating__number">7.7</span>
-                                <span class="user-rating__stats"">695 666 оценок <strong>IMDb: 7.60</strong> 955 000 оценок</span>
-                            </div>
-                        </div>
-                        <!-- End user-rating -->
-
-                        <!-- Critiс-rating -->
-                        <div class=" critic-rating-container">
-                                    <div class="rating-container">
-                                        <h3 class="critic-title">Рейтинг кинокритиков в мире </h3>
-                                        <div class="rating-bar">
-                                            <!-- Зеленая часть -->
-                                            <div class="rating-fill" style="width: 86%;">
-                                                <span>497</span>
-                                            </div>
-                                            <!-- Серая часть -->
-                                            <div class="rating-empty">
-                                                <span style="color: red;">83</span>
+                    <section class="reviews-wrapper">
+                        <h2 class="title">Рецензии зрителей ></h2>
+                        <button class="button button-review">Написать рецензию</button>
+                        <div class="reviews-container">
+                            <div class="review-left-side">
+                                <div class="review">
+                                    <div class="review-header">
+                                        <div class="review-header-bio">
+                                            <img src="./img/avatar.jpeg" alt="">
+                                            <div class="review-header-text">
+                                                <a href="#">Oleg Remizov</a>
+                                                <span>50 рецензий</span>
                                             </div>
                                         </div>
-                                        <div class="rating-label">
-                                            <span class="rating-label__title">86%</span>
-                                            <span class="rating-label__count">580 оценок</span>
-                                            <img src="./img/icons/star-dark.svg" alt="">
-                                            <span style="font-size: 20px; margin-left: 5px;">7.9</span>
+                                        <div class="review-header-date">
+                                            <span>20 июля 2026 в 15:22</span>
+                                            <a href="#">прямая ссылка</a>
                                         </div>
                                     </div>
-                                    <div class="rating-container">
-                                        <h3 class="critic-title">
-                                            В России
-                                            <img src="/img/icons/right.svg" alt="">
-                                        </h3>
-                                        <div class="rating-bar">
-                                            <!-- Зеленая часть -->
-                                            <div class="rating-fill" style="width: 100%;">
-                                                <span style="color: #093;">13</span>
-                                            </div>
-                                            <!-- Серая часть -->
-                                            <div class="rating-empty">
-                                                <!-- <span>13</span> -->
-                                            </div>
+                                    <div class="review-box">
+                                        <div class="review-content">
+                                            <h3>lorem ipsum</h3>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+                                                quidem debitis magni sit officiis facilis at labore itaque ipsa, maxime,
+                                                voluptates delectus asperiores eaque ad fuga sunt cupiditate totam
+                                                rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                Blanditiis est dolore repudiandae repellat libero, quos minus eius, quis
+                                                quasi impedit perferendis obcaecati, provident aperiam! In molestiae sed
+                                                alias qui nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                elit. Nam maxime aliquam laborum sapiente obcaecati facere autem
+                                                nesciunt velit libero debitis. Explicabo, officiis? Libero iste
+                                                asperiores, dignissimos corporis ipsa tempore accusantium. Lorem ipsum
+                                                dolor sit, amet consectetur adipisicing elit. Iure, ut libero explicabo
+                                                veritatis sint odio nihil, nam magni distinctio cumque sit tempore
+                                                voluptas pariatur. Natus facilis eveniet architecto in mollitia. Lorem
+                                                ipsum dolor sit amet, consectetur adipisicing elit. Vitae deserunt optio
+                                                ex nesciunt id quaerat dolores explicabo in! Excepturi beatae possimus
+                                                dolore saepe ducimus expedita aut animi officiis eius delectus. Lorem
+                                                ipsum dolor sit amet consectetur adipisicing elit. Distinctio recusandae
+                                                sunt debitis eaque voluptatem, quo alias neque adipisci beatae sapiente
+                                                doloribus, tempora accusamus nemo placeat ab quod? Molestias, possimus
+                                                nihil.</p>
                                         </div>
-                                        <div class="rating-label">
-                                            <span class="rating-label__title">100%</span>
-                                            <span class="rating-label__count">13 оценок</span>
-
-                                        </div>
+                                        <button class="review-btn">Показать всё</button>
                                     </div>
-                            </div>
-                            <!-- End critic-rating -->
-
-                            <section class=" slider-wrapper sdf">
-                                <button class="btn prev">❮</button>
-                                <button class="btn next">❯</button>
-                                <div class="movie-online">
-                                    <h2 class="title">Если вам понравился этот фильм ></h2>
-                                    <div class="slider-container">
-                                        <div class="slider-track">
-                                            <div class="card">
-                                                <div class="rating-poster large">8.1</div>
-                                                <a href="#"><img src="img/1.webp" alt="Фильм"></a>
-                                                <a href="#">
-                                                    <h3 class="card-title">Волк с Уолл-стрит</h3>
-                                                </a>
-                                                <span class="card-detail">2013, драма</span>
-                                            </div>
-                                            <div class="card">
-                                                <div class="rating-poster large">7.7</div>
-                                                <a href="#"><img src="img/2.webp" alt="Фильм"></a>
-                                                <a href="#">
-                                                    <h3 class="card-title">Однажды в... Голливуде</h3>
-                                                </a>
-                                                <span class="card-detail">2019, драма</span>
-                                            </div>
-                                            <div class="card">
-                                                <div class="rating-poster large">7.4</div>
-                                                <a href="#"><img src="img/3.webp" alt="Фильм"></a>
-                                                <a href="#">
-                                                    <h3 class="card-title">Вавилон</h3>
-                                                </a>
-                                                <span class="card-detail">2019, драма</span>
-                                            </div>
-                                            <div class="card">
-                                                <div class="rating-poster middle">6.6</div>
-                                                <a href="#"><img src="img/4.webp" alt="Фильм"></a>
-                                                <a href="#">
-                                                    <h3 class="card-title">Барби</h3>
-                                                </a>
-                                                <span class="card-detail">2023, комедия</span>
-                                            </div>
-                                            <div class="card">
-                                                <div class="rating-poster middle">6.4</div>
-                                                <a href="#"><img src="img/6.webp" alt="Фильм"></a>
-                                                <a href="#">
-                                                    <h3 class="card-title">Амстердам</h3>
-                                                </a>
-                                                <span class="card-detail">2022, детектив</span>
-                                            </div>
-                                            <div class="card">
-                                                <div class="rating-poster large">8.1</div>
-                                                <a href="#"><img src="img/7.webp" alt="Фильм"></a>
-                                                <a href="#">
-                                                    <h3 class="card-title">Скандал</h3>
-                                                </a>
-                                                <span class="card-detail">2019, биография</span>
-                                            </div>
-                                            <div class="card">
-                                                <div class="rating-poster large">7.4</div>
-                                                <a href="#"><img src="img/9.webp" alt="Фильм"></a>
-                                                <a href="#">
-                                                    <h3 class="card-title">Игра на понижение</h3>
-                                                </a>
-                                                <span class="card-detail">2015, триллер</span>
-                                            </div>
+                                    <div class="review-buttons-container">
+                                        <a href="" class="add-comment">Добавить комментарий</a>
+                                        <div class="button-box">
+                                            <button type="btn" class="button review-button">
+                                                <img src="/img/icons/rew-like.svg" alt="" class="btn-icon">
+                                                <span>Полезно</span>
+                                                <span>7</span>
+                                            </button>
+                                            <button type="btn" class="button review-button">
+                                                <img src="/img/icons/rew-dislike.svg" alt="" class="btn-icon">
+                                                <span>Нет</span>
+                                                <span>0</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
-
-                            <section class="you-know">
-                                <div class="you-know-title">
-                                    <h2 class="title">Знаете ли вы, что...</h2>
-                                    <button class="button">
-                                        Добавить
-                                    </button>
-                                </div>
-                                <ul class="list-facts">
-                                    <li class="fact">
-                                        Съёмки фильма проходили с 18 июня по 1 ноября 2018 года.
-                                    </li>
-                                    <li class="fact">
-                                        Шэрон Тейт <a href="/person.html" class="fact-link">(Марго Робби)</a> смотрит в
-                                        кинотеатре фильм со своим участием «Команда разрушителей» (1968). Было принято
-                                        решение использовать кадры оригинального фильма, а не переснимать отдельные
-                                        сцены с Робби в роли Шэрон. Непосредственно перед фильмом она смотрит трейлер
-                                        картины «С.С. и Компания» (1970).
-                                    </li>
-                                    <li class="fact last">
-                                        Стена с мозаикой в аэропорту, мимо которой идут герои, частично повторяет
-                                        мозаику на стене в аэропорту из фильма <a class="fact-link"
-                                            href="#">Тарантино</a>
-                                        <a class="fact-link" href="#">«Джеки Браун»
-                                            (1997).</a>
-                                    </li>
-                                </ul>
-                                <button class="button show-more">
-                                    <img src="img/icons/down.svg" alt="">
-                                    Показать еще
-                                </button>
-                            </section>
-
-                            <section class="reviews-wrapper">
-                                <h2 class="title">Рецензии зрителей ></h2>
-                                <button class="button button-review">
-                                    Написать рецензию
-                                </button>
-                                <div class="reviews-container">
-                                    <div class="review-left-side">
-                                        <div class="review">
-                                            <div class="review-header">
-                                                <div class="review-header-bio">
-                                                    <img src="./img/avatar.jpeg" alt="">
-                                                    <div class="review-header-text">
-                                                        <a href="#">Oleg Remizov</a>
-                                                        <span>50 рецензий</span>
-                                                    </div>
-                                                </div>
-                                                <div class="review-header-date">
-                                                    <span>20 июля 2026 в 15:22</span>
-                                                    <a href="#">прямая ссылка</a>
-                                                </div>
-                                            </div>
-                                            <div class="review-box">
-                                                <div class="review-content" id="reviewContent">
-                                                    <h3>lorem ipsum</h3>
-                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo quidem debitis magni sit officiis facilis at labore itaque ipsa, maxime, voluptates delectus asperiores eaque ad fuga sunt cupiditate totam rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis est dolore repudiandae repellat libero, quos minus eius, quis quasi impedit perferendis obcaecati, provident aperiam! In molestiae sed alias qui nostrum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam maxime aliquam laborum sapiente obcaecati facere autem nesciunt velit libero debitis. Explicabo, officiis? Libero iste asperiores, dignissimos corporis ipsa tempore accusantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, ut libero explicabo veritatis sint odio nihil, nam magni distinctio cumque sit tempore voluptas pariatur. Natus facilis eveniet architecto in mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae deserunt optio ex nesciunt id quaerat dolores explicabo in! Excepturi beatae possimus dolore saepe ducimus expedita aut animi officiis eius delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio recusandae sunt debitis eaque voluptatem, quo alias neque adipisci beatae sapiente doloribus, tempora accusamus nemo placeat ab quod? Molestias, possimus nihil.</p>
-                                                </div>
-                                                <button class="review-btn" id="reviewToggle">Показать всё</button>
-                                            </div>
-                                            <div class="review-buttons-container">
-                                                <a href="" class="add-comment">Добавить комментарий</a>
-                                                <div class="button-box">
-                                                    <button type="btn" class="button review-button">
-                                                        <img src="/img/icons/rew-like.svg"" alt="" class="btn-icon">
-                                                        <span>Полезно</span>
-                                                        <span>7</span>
-                                                    </button>
-
-                                                    <button type="btn" class="button review-button">
-                                                        <img src="/img/icons/rew-dislike.svg"" alt="" class="btn-icon">
-                                                        <span>Нет</span>
-                                                        <span>0</span>
-                                                    </button>
-                                                </div>
+                                <div class="review" style="background-color: rgba(255, 68, 68, 0.1);">
+                                    <div class="review-header">
+                                        <div class="review-header-bio">
+                                            <img src="./img/islands-200.webp" alt="">
+                                            <div class="review-header-text">
+                                                <a href="#">Иван Иванов</a>
+                                                <span>11 рецензий</span>
                                             </div>
                                         </div>
-                                        <div class="review">
-                                            <div class="review-header">
-                                                <div class="review-header-bio">
-                                                    <img src="./img/islands-200.webp" alt="">
-                                                    <div class="review-header-text">
-                                                        <a href="#">Иван Иванов</a>
-                                                        <span>11 рецензий</span>
-                                                    </div>
-                                                </div>
-                                                <div class="review-header-date">
-                                                    <span>23 июля 2025 в 13:30</span>
-                                                    <a href="#">прямая ссылка</a>
-                                                </div>
-                                            </div>
-                                            <div class="review-box">
-                                                <div class="review-content" id="reviewContent">
-                                                    <h3>РыбаТекст</h3>
-                                                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Толку, раз несколько рекламных проектах то вопроса заманивший страну, над прямо власти маленький необходимыми парадигматическая дороге, диких своих деревни журчит? Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Вершину взобравшись образ не буквоград пунктуация своих. Рыбного, страна текста, даже города, взгляд вершину пор свою свой взобравшись встретил оксмокс. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Запятых, пунктуация составитель домах текст страну рыбного заголовок строчка первую залетают заманивший своих, что пояс вдали, наш свое однажды собрал! Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Себя на берегу грустный все, великий решила последний страну текст города страна ведущими семь запятой домах, ему выйти она правилами? Языком? Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Решила агентство своего это по всей, деревни одна всеми! Дал первую меня о семь ipsum использовало вопрос, текста имеет речью даже! Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Родного курсивных осталось, несколько маленький инициал предложения рыбного лучше запятых своего что своих выйти имеет до если наш вскоре даль. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Переписывается гор последний он сбить мир! На берегу подпоясал lorem, рекламных предложения, использовало переулка алфавит рот то щеке своего оксмокс запятой! Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Правилами встретил за диких пор взгляд оксмокс там сбить одна о! Залетают строчка лучше снова решила выйти, жизни единственное предупреждал!</p>
-                                                </div>
-                                                <button class="review-btn" id="reviewToggle">Показать всё</button>
-                                            </div>
-                                            <div class="review-buttons-container">
-                                                <a href="" class="add-comment">Добавить комментарий</a>
-                                                <div class="button-box">
-                                                    <button type="btn" class="button review-button">
-                                                        <img src="/img/icons/rew-like.svg"" alt="" class="btn-icon">
-                                                        <span>Полезно</span>
-                                                        <span>1</span>
-                                                    </button>
-
-                                                    <button type="btn" class="button review-button">
-                                                        <img src="/img/icons/rew-dislike.svg"" alt="" class="btn-icon">
-                                                        <span>Нет</span>
-                                                        <span>28880</span>
-                                                    </button>
-                                                </div>
-                                            </div>
+                                        <div class="review-header-date">
+                                            <span>23 июля 2025 в 13:30</span>
+                                            <a href="#">прямая ссылка</a>
                                         </div>
                                     </div>
-                                    <div class="review-right-side">
-                                        <div class="reveiw-counter-box counter-total">
-                                            <span class="counter-digit">380</span> 
-                                            <p class="review-rating">Всего</p>
+                                    <div class="review-box">
+                                        <div class="review-content">
+                                            <h3>РыбаТекст</h3>
+                                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                                рыбные тексты. Толку, раз несколько рекламных проектах то вопроса
+                                                заманивший страну, над прямо власти маленький необходимыми
+                                                парадигматическая дороге, диких своих деревни журчит? Далеко-далеко за
+                                                словесными горами в стране гласных, и согласных живут рыбные тексты.
+                                                Вершину взобравшись образ не буквоград пунктуация своих. Рыбного, страна
+                                                текста, даже города, взгляд вершину пор свою свой взобравшись встретил
+                                                оксмокс. Далеко-далеко за словесными горами в стране гласных и согласных
+                                                живут рыбные тексты. Запятых, пунктуация составитель домах текст страну
+                                                рыбного заголовок строчка первую залетают заманивший своих, что пояс
+                                                вдали, наш свое однажды собрал! Далеко-далеко за словесными, горами в
+                                                стране гласных и согласных живут рыбные тексты. Себя на берегу грустный
+                                                все, великий решила последний страну текст города страна ведущими семь
+                                                запятой домах, ему выйти она правилами? Языком? Далеко-далеко за
+                                                словесными горами в стране гласных, и согласных живут рыбные тексты.
+                                                Решила агентство своего это по всей, деревни одна всеми! Дал первую меня
+                                                о семь ipsum использовало вопрос, текста имеет речью даже! Далеко-далеко
+                                                за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                                Родного курсивных осталось, несколько маленький инициал предложения
+                                                рыбного лучше запятых своего что своих выйти имеет до если наш вскоре
+                                                даль. Далеко-далеко за словесными горами в стране гласных и согласных
+                                                живут рыбные тексты. Переписывается гор последний он сбить мир! На
+                                                берегу подпоясал lorem, рекламных предложения, использовало переулка
+                                                алфавит рот то щеке своего оксмокс запятой! Далеко-далеко за словесными
+                                                горами в стране гласных и согласных живут рыбные тексты. Правилами
+                                                встретил за диких пор взгляд оксмокс там сбить одна о! Залетают строчка
+                                                лучше снова решила выйти, жизни единственное предупреждал!</p>
                                         </div>
-                                        <div class="reveiw-counter-box">
-                                            <span class="counter-digit" style="color: #3bb33b;">286</span> <span class="counter-percent">75.26%</span>
-                                            <p class="review-rating">Положительные</p>
-                                        </div>
-                                        <div class="reveiw-counter-box">
-                                            <span class="counter-digit" style="color: red;">47</span> <span class="counter-percent">12.37%</span>
-                                            <p class="review-rating">Отрицательные</p>
-                                        </div>
-                                        <div class="reveiw-counter-box">
-                                            <span class="counter-digit" style="color: grey;">47</span> <span class="counter-percent">12.37%</span>
-                                            <p class="review-rating">Нейтральные</p>
+                                        <button class="review-btn">Показать всё</button>
+                                    </div>
+                                    <div class="review-buttons-container">
+                                        <a href="" class="add-comment">Добавить комментарий</a>
+                                        <div class="button-box">
+                                            <button type="btn" class="button review-button">
+                                                <img src="/img/icons/rew-like.svg" alt="" class="btn-icon">
+                                                <span>Полезно</span>
+                                                <span>1</span>
+                                            </button>
+                                            <button type="btn" class="button review-button">
+                                                <img src="/img/icons/rew-dislike.svg" alt="" class="btn-icon">
+                                                <span>Нет</span>
+                                                <span>28880</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                            </section>
+                                <div class="review" style="background-color: rgba(0, 0, 0, 0.05)">
+                                    <div class="review-header">
+                                        <div class="review-header-bio">
+                                            <img src="./img/islands-200.webp" alt="">
+                                            <div class="review-header-text">
+                                                <a href="#">Алексей Алексеевич</a>
+                                                <span>11 рецензий</span>
+                                            </div>
+                                        </div>
+                                        <div class="review-header-date">
+                                            <span>11 июля 2021 в 18:30</span>
+                                            <a href="#">прямая ссылка</a>
+                                        </div>
+                                    </div>
+                                    <div class="review-box">
+                                        <div class="review-content">
+                                            <h3>РыбаТекст</h3>
+                                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                                рыбные тексты. Толку, раз несколько рекламных проектах то вопроса
+                                                заманивший страну, над прямо власти маленький необходимыми
+                                                парадигматическая дороге, диких своих деревни журчит? Далеко-далеко за
+                                                словесными горами в стране гласных, и согласных живут рыбные тексты.
+                                                Вершину взобравшись образ не буквоград пунктуация своих. Рыбного, страна
+                                                текста, даже города, взгляд вершину пор свою свой взобравшись встретил
+                                                оксмокс. Далеко-далеко за словесными горами в стране гласных и согласных
+                                                живут рыбные тексты. Запятых, пунктуация составитель домах текст страну
+                                                рыбного заголовок строчка первую залетают заманивший своих, что пояс
+                                                вдали, наш свое однажды собрал! Далеко-далеко за словесными, горами в
+                                                стране гласных и согласных живут рыбные тексты. Себя на берегу грустный
+                                                все, великий решила последний страну текст города страна ведущими семь
+                                                запятой домах, ему выйти она правилами? Языком? Далеко-далеко за
+                                                словесными горами в стране гласных, и согласных живут рыбные тексты.
+                                                Решила агентство своего это по всей, деревни одна всеми! Дал первую меня
+                                                о семь ipsum использовало вопрос, текста имеет речью даже! Далеко-далеко
+                                                за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                                Родного курсивных осталось, несколько маленький инициал предложения
+                                                рыбного лучше запятых своего что своих выйти имеет до если наш вскоре
+                                                даль. Далеко-далеко за словесными горами в стране гласных и согласных
+                                                живут рыбные тексты. Переписывается гор последний он сбить мир! На
+                                                берегу подпоясал lorem, рекламных предложения, использовало переулка
+                                                алфавит рот то щеке своего оксмокс запятой! Далеко-далеко за словесными
+                                                горами в стране гласных и согласных живут рыбные тексты. Правилами
+                                                встретил за диких пор взгляд оксмокс там сбить одна о! Залетают строчка
+                                                лучше снова решила выйти, жизни единственное предупреждал!</p>
+                                        </div>
+                                        <button class="review-btn">Показать всё</button>
+                                    </div>
+                                    <div class="review-buttons-container">
+                                        <a href="" class="add-comment">Добавить комментарий</a>
+                                        <div class="button-box">
+                                            <button type="btn" class="button review-button">
+                                                <img src="/img/icons/rew-like.svg" alt="" class="btn-icon">
+                                                <span>Полезно</span>
+                                                <span>0</span>
+                                            </button>
+                                            <button type="btn" class="button review-button">
+                                                <img src="/img/icons/rew-dislike.svg" alt="" class="btn-icon">
+                                                <span>Нет</span>
+                                                <span>0</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-right-side">
+                                <div class="review-counter-box counter-total">
+                                    <span class="counter-digit">380</span>
+                                    <p class="review-rating">Всего</p>
+                                </div>
+                                <div class="review-counter-box">
+                                    <span class="counter-digit" style="color: #3bb33b;">286</span>
+                                    <span class="counter-percent">75.26%</span>
+                                    <p class="review-rating">Положительные</p>
+                                </div>
+                                <div class="review-counter-box">
+                                    <span class="counter-digit" style="color: red;">47</span>
+                                    <span class="counter-percent">12.37%</span>
+                                    <p class="review-rating">Отрицательные</p>
+                                </div>
+                                <div class="review-counter-box">
+                                    <span class="counter-digit" style="color: grey;">47</span>
+                                    <span class="counter-percent">12.37%</span>
+                                    <p class="review-rating">Нейтральные</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-            </article>
-        </main>
-    </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+    
 
 
 
@@ -865,13 +960,13 @@
 
                 // Переключаем класс видимости
                 const isOpen = content.classList.toggle('is-open');
-                
+
                 // Меняем текст конкретной кнопки
                 btn.textContent = isOpen ? 'Скрыть' : 'Показать всё';
             });
         });
     </script>
-    
+
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background: #f4f4f4;
 
 
     ul {
@@ -16,7 +17,6 @@ body {
         text-decoration: none;
     }
 
-    background: #f4f4f4;
 }
 
 *,
@@ -45,8 +45,7 @@ h6 {
 .page {
     width: 100%;
     margin: 0 auto;
-    /* background-color: #f4f4f4; */
-
+    background-color: #f4f4f4;
 }
 
 
@@ -551,9 +550,14 @@ h6 {
 End Header
 ===============================================*/
 
+.page {
+    background: #fff;
+}
+
 .main-container {
     width: 1280px;
     margin: 0 auto;
+    /* padding-bottom: 200vh; */
     background-color: #fff;
 
 }
@@ -760,7 +764,6 @@ End Header
 .data-container {
     width: 580px;
     margin-top: 20px;
-    /* margin-left: 7px; */
 
 }
 
@@ -1038,18 +1041,6 @@ End Header
 
 }
 
-/* .rating-poster.low {
-    background-color: red;
-}
-
-.rating-poster.middle {
-    background-color: #777;
-    ;
-}
-
-.rating-poster.large {
-    background-color: #3bb33b;
-} */
 
 /* End slider */
 
@@ -1066,10 +1057,7 @@ End Header
 
 .additional-content {
     width: 800px;
-    height: 1000px;
     margin-left: 45px;
-    /* border-left: 1px solid red; */
-    /* border-right: 1px solid red; */
 
 
 }
@@ -1432,7 +1420,8 @@ Reviews
 }
 
 .review {
-    border: 1px solid rgba(31, 31, 31, 0.199);;
+    border: 1px solid rgba(31, 31, 31, 0.199);
+    ;
     margin-bottom: 20px;
     background-color: rgba(47, 212, 78, 0.1);
 }
@@ -1530,7 +1519,7 @@ Reviews
 .add-comment::before {
     content: url(./img/icons/comment.svg);
     vertical-align: middle;
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
 
@@ -1538,7 +1527,7 @@ Reviews
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .review-button {
@@ -1561,9 +1550,7 @@ Reviews
 }
 
 
-.review-counter-box {
-
-}
+.review-counter-box {}
 
 .counter-total {
     position: relative;
@@ -1574,7 +1561,8 @@ Reviews
     position: absolute;
     left: -7px;
     top: 50%;
-    transform: translateY(-50%); /* Идеальное выравнивание по центру */
+    transform: translateY(-50%);
+    /* Идеальное выравнивание по центру */
     width: 2px;
     height: 40px;
     background-color: #ff0000;
@@ -1586,7 +1574,7 @@ Reviews
 .counter-digit {
     font-size: 28px;
     font-family: var(--font-family);
-    
+
 }
 
 .counter-percent {
