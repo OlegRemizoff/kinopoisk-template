@@ -704,36 +704,116 @@ End Header
 }
 
 
-.movie-container {
+.kinopoisk-card-container {
     max-width: 940px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* gap: 8px; */
     margin-top: 16px;
-
-
-    /* background-color: #eb469f; */
-    /* padding-bottom: 100vh; */
 }
 
-
-.card {
-    width: 100%;
+.kinopoisk-card {
+    width: 228px;
+    height: 344px;
+    background-color: #141414;
+    color: #ffffff;
+    font-family: 'Segoe UI', Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    cursor: pointer;
+    /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
+}
 
-    flex: 0 0 24.3%;
+.kinopoisk-card:hover {
+    /* filter: brightness(0.7); */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kinopoisk-card:hover .card-title {
+    filter: brightness(0.7);
+    color: rgb(255, 85, 0);
 }
 
 
-
-.card-img {
+/* Обёртка для точного сохранения пропорций постера (2:3) */
+.card-poster-wrapper {
+    position: relative;
     width: 100%;
-    height: 340px;
+    aspect-ratio: 2 / 3;
+
+    background-color: #252525;
+}
+
+.card-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-rating {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rating-high {
+    background-color: #3bb33b;
+}
+
+.rating-neutral {
+    background-color: #aaa;
+}
+
+.card-content {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .card-title {
-    
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
+.card-meta {
+    margin: 0;
+    font-size: 13px;
+    color: rgba(0, 0, 0, .6);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.card-info-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    min-height: 24px;
+
+
+}
+
+.card-info-logo {
+    width: 24px;
+    filter: invert(100%);
+    border: 6px;
+    background: #0d0d0d;
+    margin-right: 5px;
+}
+
+.card-info-text {
+    color: #000;
+    flex-shrink: 0;
+    opacity: .6;
+}
