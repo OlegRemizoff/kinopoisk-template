@@ -584,7 +584,7 @@ End Header
 }
 
 .sidebar-box {
-    padding-top: 12px;
+    padding-top: 16px;
 }
 
 
@@ -700,15 +700,33 @@ End Header
 
 /* Card grid */
 
+.card-grid {
+    margin-top: 45px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-title {
+    font-size: 24px;
+    letter-spacing: -.5px;
+}
+
+.stream-btn {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .kinopoisk-card-container {
     max-width: 940px;
-    margin-top: 16px;
+    margin-top: 13px;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 120px 8px;
-
-
 }
 
 .kinopoisk-card {
